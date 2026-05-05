@@ -1,0 +1,36 @@
+{
+  "producers": [
+    {
+      "allowed_fields": [
+        "facility_id",
+        "name",
+        "facility_type",
+        "address",
+        "phone",
+        "hours",
+        "services",
+        "website",
+        "latitude",
+        "longitude",
+        "operating_status"
+      ],
+      "auth_method": "api_key",
+      "denied_fields": [
+        "employee_contact_data",
+        "internal_extensions",
+        "credentials",
+        "pii",
+        "phi",
+        "tickets",
+        "cmdb_export",
+        "servicenow_export"
+      ],
+      "failure_behavior": "do_not_release_new_catalog",
+      "freshness_target_days": 30,
+      "producer_name": "VA Facilities API",
+      "source_type": "public_api",
+      "source_url": "https://developer.va.gov/explore/api/va-facilities/docs"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

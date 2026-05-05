@@ -1,0 +1,142 @@
+{
+  "$id": "https://example.local/schemas/va_location_record.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "address": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "approval_state": {
+      "enum": [
+        "draft",
+        "review_pending",
+        "approved",
+        "rejected",
+        "superseded"
+      ],
+      "type": "string"
+    },
+    "approved_for": {
+      "type": "array"
+    },
+    "catalog_version": {
+      "type": "string"
+    },
+    "classification": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "facility_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "facility_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lat": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "lineage_id": {
+      "type": "string"
+    },
+    "long": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "not_approved_for": {
+      "type": "array"
+    },
+    "operating_status": {
+      "type": [
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "phone": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "null"
+      ]
+    },
+    "raw_source_file": {
+      "type": "string"
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "source_snapshot_utc": {
+      "type": "string"
+    },
+    "source_system": {
+      "type": "string"
+    },
+    "source_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "station_code": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "station_code_confidence": {
+      "enum": [
+        "source",
+        "derived",
+        "manual_reviewed",
+        "not_available",
+        "conflicting",
+        "deprecated"
+      ],
+      "type": "string"
+    },
+    "visn": {
+      "type": [
+        "string",
+        "number",
+        "null"
+      ]
+    },
+    "website": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "catalog_version",
+    "lineage_id",
+    "facility_id",
+    "source_system",
+    "source_snapshot_utc",
+    "name",
+    "station_code_confidence",
+    "approval_state"
+  ],
+  "title": "VA Location Record",
+  "type": "object"
+}

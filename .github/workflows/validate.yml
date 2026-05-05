@@ -1,0 +1,29 @@
+name: validate
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Static validation
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          python3 scripts/validate_catalog.py
+
+      - name: Build release candidate if normalized data exists
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          if [ -f data/normalized/va_locations.json ]; then
+            python3 scripts/build_release_candidate.py
+          else
+            echo "No normalized data yet."
+          fi

@@ -1,0 +1,29 @@
+{
+  "address": {},
+  "approval_state": "draft",
+  "approved_for": [],
+  "catalog_version": "example",
+  "classification": "synthetic",
+  "facility_id": "vha_000",
+  "facility_type": "health",
+  "lat": null,
+  "lineage_id": "source:synthetic|facility_id:vha_000|snapshot:example",
+  "long": null,
+  "name": "Synthetic Example VA Facility",
+  "not_approved_for": [
+    "employee_directory",
+    "internal_phone_tree",
+    "automatic_production_mutation"
+  ],
+  "operating_status": null,
+  "phone": {},
+  "raw_source_file": "fixtures/example_record_public_only.json",
+  "schema_version": "1.0.0",
+  "source_snapshot_utc": "2026-05-05T00:00:00Z",
+  "source_system": "synthetic-example",
+  "source_url": null,
+  "station_code": "000",
+  "station_code_confidence": "derived",
+  "visn": null,
+  "website": null
+}

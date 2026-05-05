@@ -1,0 +1,13 @@
+{
+  "denied_markers": [
+    "ssn",
+    "social security number",
+    "patient",
+    "claimant",
+    "employee_id",
+    "internal extension",
+    "servicenow export",
+    "cmdb export"
+  ],
+  "schema_version": "1.0.0"
+}
