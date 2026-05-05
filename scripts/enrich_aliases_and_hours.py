@@ -53,6 +53,10 @@ def sha256_text(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8", errors="ignore")).hexdigest()
 
 
+def record_search_text(record: dict[str, Any]) -> str:
+    return json.dumps(record, sort_keys=True, default=str).lower()
+
+
 def download(url: str) -> str:
     req = urllib.request.Request(
         url,
@@ -77,21 +81,31 @@ def extract_facility_hours(page: str) -> dict[str, Any]:
     lines = [clean_text(line) for line in text.splitlines() if clean_text(line)]
     start_idx = None
     for idx, line in enumerate(lines):
-        if line.lower() in {"facility hours", "office hours"} or line.lower().endswith("facility hours"):
+        lower = line.lower()
+        if lower in {"facility hours", "office hours"} or lower.endswith("facility hours") or lower.endswith("office hours"):
             start_idx = idx
             break
     if start_idx is None:
         for idx, line in enumerate(lines):
-            if "facility hours" in line.lower() or "office hours" in line.lower():
+            lower = line.lower()
+            if "facility hours" in lower or "office hours" in lower:
                 start_idx = idx
                 break
-    search_block = "\n".join(lines[start_idx:start_idx + 20] if start_idx is not None else lines[:80])
+
+    search_block = "\n".join(lines[start_idx:start_idx + 35] if start_idx is not None else lines[:120])
     matches = DAY_RE.findall(search_block)
     hours = {}
     for day, value in matches:
         norm_day = day[:3].title()
         if norm_day in DAYS:
             hours[norm_day] = clean_text(value)
+
+    # Some VA.gov pages state open/closed language without seven day rows.
+    if not hours:
+        open_247 = re.search(r"\b(open\s+24\s*/\s*7|24\s+hours|24/7)\b", search_block, re.I)
+        if open_247:
+            hours = {day: "Open 24 hours" for day in DAYS}
+
     return {
         "hours": hours,
         "confidence": "public_page_facility_hours" if len(hours) >= 5 else "not_found_or_partial",
@@ -103,19 +117,30 @@ def record_matches_seed(record: dict[str, Any], seed: dict[str, Any]) -> bool:
     match = seed.get("match", {})
     if not isinstance(match, dict):
         return False
+
     station_code = normalize(match.get("station_code"))
     name_contains = normalize(match.get("name_contains"))
     facility_id = normalize(match.get("facility_id"))
+    website_contains = normalize(match.get("website_contains"))
+    any_contains = normalize(match.get("any_contains"))
+
     record_station = normalize(record.get("station_code"))
     record_name = normalize(record.get("name"))
     record_facility_id = normalize(record.get("facility_id"))
-    if station_code and station_code != record_station:
-        return False
+    record_website = normalize(record.get("website"))
+    record_all = record_search_text(record)
+
     if facility_id and facility_id != record_facility_id:
+        return False
+    if station_code and station_code != record_station:
         return False
     if name_contains and name_contains not in record_name:
         return False
-    return bool(station_code or name_contains or facility_id)
+    if website_contains and website_contains not in record_website:
+        return False
+    if any_contains and any_contains not in record_all:
+        return False
+    return bool(station_code or name_contains or facility_id or website_contains or any_contains)
 
 
 def apply_aliases(records: list[dict[str, Any]], seed_path: Path) -> int:
@@ -147,6 +172,31 @@ def apply_aliases(records: list[dict[str, Any]], seed_path: Path) -> int:
     return count
 
 
+def filter_records(records: list[dict[str, Any]], *, facility_ids: list[str], station_codes: list[str], queries: list[str]) -> list[dict[str, Any]]:
+    facility_set = {normalize(v) for v in facility_ids if normalize(v)}
+    station_set = {normalize(v) for v in station_codes if normalize(v)}
+    query_terms = [normalize(v) for v in queries if normalize(v)]
+
+    if not facility_set and not station_set and not query_terms:
+        return records
+
+    selected = []
+    for record in records:
+        facility_id = normalize(record.get("facility_id"))
+        station_code = normalize(record.get("station_code"))
+        searchable = record_search_text(record)
+        if facility_set and facility_id in facility_set:
+            selected.append(record)
+            continue
+        if station_set and station_code in station_set:
+            selected.append(record)
+            continue
+        if query_terms and all(term in searchable for term in query_terms):
+            selected.append(record)
+            continue
+    return selected
+
+
 def enrich_hours(records: list[dict[str, Any]], *, limit: int, sleep_seconds: float, raw_root: Path) -> int:
     enriched = 0
     fetched = 0
@@ -159,7 +209,7 @@ def enrich_hours(records: list[dict[str, Any]], *, limit: int, sleep_seconds: fl
             record["facility_hours_confidence"] = "no_public_location_url"
             continue
         try:
-            log(f"FETCH_HOURS {record.get('facility_id')} {url}")
+            log(f"FETCH_HOURS {record.get('facility_id')} station={record.get('station_code')} {url}")
             page = download(url)
             fetched += 1
             raw_path = raw_root / f"{safe_name(clean_text(record.get('facility_id')))}_{safe_name(clean_text(record.get('name')))}.html"
@@ -188,7 +238,10 @@ def main() -> None:
     parser.add_argument("--alias-seed", default="config/site_alias_seed.json")
     parser.add_argument("--output", default="data/enriched/va_locations.enriched.json")
     parser.add_argument("--download-hours", action="store_true")
-    parser.add_argument("--hours-limit", type=int, default=0, help="0 means all records with a public URL")
+    parser.add_argument("--hours-limit", type=int, default=0, help="0 means all selected records with a public URL")
+    parser.add_argument("--facility-id", action="append", default=[], help="Only fetch hours for matching facility_id. May be repeated.")
+    parser.add_argument("--station-code", action="append", default=[], help="Only fetch hours for matching station_code. May be repeated.")
+    parser.add_argument("--query", action="append", default=[], help="Only fetch hours for records containing this text. May be repeated.")
     parser.add_argument("--sleep", type=float, default=0.25)
     args = parser.parse_args()
 
@@ -198,8 +251,9 @@ def main() -> None:
         raise SystemExit("Input catalog must be a JSON array.")
 
     alias_count = apply_aliases(records, Path(args.alias_seed))
+    selected_records = filter_records(records, facility_ids=args.facility_id, station_codes=args.station_code, queries=args.query)
     raw_root = Path("data/raw/public_hours") / dt.datetime.now(dt.UTC).strftime("%Y%m%dT%H%M%SZ")
-    hours_count = enrich_hours(records, limit=args.hours_limit, sleep_seconds=args.sleep, raw_root=raw_root) if args.download_hours else 0
+    hours_count = enrich_hours(selected_records, limit=args.hours_limit, sleep_seconds=args.sleep, raw_root=raw_root) if args.download_hours else 0
 
     output_path = Path(args.output)
     write_json(output_path, records)
@@ -209,6 +263,10 @@ def main() -> None:
         "output": str(output_path),
         "alias_seed": args.alias_seed,
         "record_count": len(records),
+        "selected_record_count": len(selected_records),
+        "selected_facility_ids": args.facility_id,
+        "selected_station_codes": args.station_code,
+        "selected_queries": args.query,
         "alias_assignment_count": alias_count,
         "hours_enriched_count": hours_count,
         "download_hours": bool(args.download_hours),
@@ -219,6 +277,7 @@ def main() -> None:
     write_json(Path("evidence/latest_alias_hours_enrichment.json"), receipt)
     log("ENRICH_ALIAS_HOURS_RESULT=PASS")
     log(f"RECORD_COUNT={len(records)}")
+    log(f"SELECTED_RECORD_COUNT={len(selected_records)}")
     log(f"ALIAS_ASSIGNMENT_COUNT={alias_count}")
     log(f"HOURS_ENRICHED_COUNT={hours_count}")
     log(f"OUTPUT={output_path}")
