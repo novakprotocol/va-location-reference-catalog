@@ -632,7 +632,7 @@
       } else if (/open\s+daily|daily\s+from|open\s+every\s+day|seven\s+days|7\s+days/i.test(raw)) {
         markAll('open');
         label = /sunrise|sunset|dawn|dusk/i.test(raw) ? 'Daily daylight' : 'Daily';
-      } else if (/monday\s+(through|thru|to)\s+friday|mon(day)?\s*[-Ã¢â‚¬â€œ]\s*fri(day)?|weekdays?/i.test(raw)) {
+      } else if (/monday\s+(through|thru|to)\s+friday|mon(day)?\s*[-ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“]\s*fri(day)?|weekdays?/i.test(raw)) {
         markWeekdays();
         label = 'Mon-Fri';
       } else {
