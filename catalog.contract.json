@@ -1,0 +1,44 @@
+{
+  "schema_version": "2026.05.05.public_internal_boundary.v2",
+  "catalog_name": "VA Location Reference Catalog",
+  "public_lane": {
+    "allowed": [
+      "public facility name",
+      "public address",
+      "public website",
+      "public coordinates",
+      "public facility type",
+      "public source URL",
+      "candidate-only public contact and hours evidence",
+      "review status labels"
+    ],
+    "forbidden": [
+      "patient data",
+      "employee private data",
+      "internal-only contacts",
+      "internal routing",
+      "live outage data",
+      "ticket data",
+      "CMDB restricted attributes",
+      "credentials",
+      "tokens",
+      "private network details",
+      "vulnerability details"
+    ]
+  },
+  "internal_overlay_lane": {
+    "recommended_location": "private repo, private branch, private storage, or internal portal",
+    "join_keys": [
+      "facility_id",
+      "station_code",
+      "source_system",
+      "source_url"
+    ],
+    "must_not_publish_to_public_pages": true
+  },
+  "ui_policy": {
+    "public_vcl_banner": "fixed_top_public_pages",
+    "sticky_table_headers": true,
+    "candidate_hours_day_boxes": true
+  }
+}
