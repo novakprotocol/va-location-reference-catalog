@@ -1,0 +1,3058 @@
+[
+  {
+    "facility_id": "nca_042",
+    "name": "Baxter Springs City Soldiers' Lot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "042",
+    "website": "https://www.cem.va.gov/cems/lots/BaxterSprings.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/BaxterSprings.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0001_nca_042_BaxterSprings.asp",
+    "raw_sha256": "469191d4115e0db9a4642593a62d6ba3a7631519104d523ec6f2c0a877c06da6",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 72886,
+      "elapsed_ms": 581,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "913-727-1376",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "and more. » Find Your Loved One Address: 166 West Avenue Baxter Springs, KS 66713 Phone: 913-727-1376 FAX: 913-727-1905 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "913-727-1905",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "Your Loved One Address: 166 West Avenue Baxter Springs, KS 66713 Phone: 913-727-1376 FAX: 913-727-1905 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday thru Friday 7:30 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays except Memorial Day.",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_054",
+    "name": "Congressional Cemetery Government Lots",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "054",
+    "website": "https://www.cem.va.gov/cems/lots/Congressional.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/Congressional.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0002_nca_054_Congressional.asp",
+    "raw_sha256": "871c7b21e5bc566aedc476548574b0dcb412e84cc7ab25ef466a15ca7158fc37",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 77122,
+      "elapsed_ms": 478,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "410-644-9696",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "re. » Find Your Loved One Address: 1801 East Street Southeast Washington, DC 20003 Phone: 410-644-9696 FAX: 410-644-1563 Cemetery Map Kiosk : No Driving Directions Enter your starting address"
+      },
+      {
+        "phone": "410-644-1563",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "ved One Address: 1801 East Street Southeast Washington, DC 20003 Phone: 410-644-9696 FAX: 410-644-1563 Cemetery Map Kiosk : No Driving Directions Enter your starting address : Map: View Map IM"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "202-543-0539",
+        "role": "facility_contact_candidate",
+        "confidence": "medium",
+        "context": "Please contact the national cemetery for more information. Congressional Cemetery Phone: 202-543-0539 Website: https://www.congressionalcemetery.org Note: Link will take you outside the VA we"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: This cemetery is supervised by Baltimore National Cemetery.",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_055",
+    "name": "Evergreen Cemetery Soldiers' Lot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "055",
+    "website": "https://www.cem.va.gov/cems/lots/Evergreen.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/Evergreen.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0003_nca_055_Evergreen.asp",
+    "raw_sha256": "d417c39db29078728a2ede6e8d25ede0909a847e24d9b598428c52f53c71093e",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 72597,
+      "elapsed_ms": 475,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "859-885-5727",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "ts and more. » Find Your Loved One Address: 25 Alexandria Pike Southgate, KY 41071 Phone: 859-885-5727 FAX: 859-887-4860 Cemetery Map Kiosk : No Driving Directions Enter your starting address"
+      },
+      {
+        "phone": "859-887-4860",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "d Your Loved One Address: 25 Alexandria Pike Southgate, KY 41071 Phone: 859-885-5727 FAX: 859-887-4860 Cemetery Map Kiosk : No Driving Directions Enter your starting address : Map: View Map IM"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "270-692-3390",
+        "role": "facility_contact_candidate",
+        "confidence": "medium",
+        "context": "e unable to reach Camp Nelson National Cemetery, please call Lebanon National Cemetery at 270-692-3390 and someone will assist you. Please contact the national cemetery for more information. F"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday thru Friday 8:00 a.m.",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_058",
+    "name": "Forest Lawn Cemetery Soldiers' Lot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "058",
+    "website": "https://www.cem.va.gov/cems/lots/ForestLawn.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/ForestLawn.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0004_nca_058_ForestLawn.asp",
+    "raw_sha256": "4b0b3bd83c414c0a821d18b91ed25b5c273f9030224ee39dcc6e58e159fbba3a",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 68768,
+      "elapsed_ms": 728,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "402-253-3949",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "oved One Address: Forest Lawn Memorial Park, 7909 Mormon Bridge Rd Omaha, NE 68112 Phone: 402-253-3949 FAX: Not Available Cemetery Map: Not Available Kiosk : No Driving Directions Enter your s"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "402-451-1000",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "n for the larger cemetery is available, it is provided below. Forest Lawn Cemetery Phone: (402) 451-1000 Fax: (402) 451-8960 Website: www.forestlawnomaha.com NOTE: Link will take you outside the"
+      },
+      {
+        "phone": "402-451-8960",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "etery is available, it is provided below. Forest Lawn Cemetery Phone: (402) 451-1000 Fax: (402) 451-8960 Website: www.forestlawnomaha.com NOTE: Link will take you outside the VA website. VA does"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Office Hours: Monday thru Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays except Memorial Day.",
+        "confidence": "low"
+      },
+      {
+        "text": "Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_059",
+    "name": "Fort Crawford Cemetery Soldiers' Lot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "059",
+    "website": "https://www.cem.va.gov/cems/lots/Fort_Crawford.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/Fort_Crawford.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0005_nca_059_Fort_Crawford.asp",
+    "raw_sha256": "430883f31be3bdf5517feec1718613794f6be4bf58efded91524309693f8d582",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 70124,
+      "elapsed_ms": 471,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "414-382-5300",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "ore. » Find Your Loved One Address: 413 S Beaumont Road Prairie du Chien, WI 53821 Phone: 414-382-5300 FAX: 414-382-5321 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "414-382-5321",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "oved One Address: 413 S Beaumont Road Prairie du Chien, WI 53821 Phone: 414-382-5300 FAX: 414-382-5321 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday through Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays except Memorial Day.",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_061",
+    "name": "Green Mount Cemetery Soldiers' Lot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "061",
+    "website": "https://www.cem.va.gov/cems/lots/Green_Mount.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/Green_Mount.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0006_nca_061_Green_Mount.asp",
+    "raw_sha256": "403e931a07705d611a24ffa80a62304b717897e9e70a323d2a8aa5e921ba1c0a",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 69515,
+      "elapsed_ms": 484,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "508-563-7113",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "nts and more. » Find Your Loved One Address: 250 State Street Montpelier, VT 05602 Phone: 508-563-7113 FAX: 508-564-9946 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "508-564-9946",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "nd Your Loved One Address: 250 State Street Montpelier, VT 05602 Phone: 508-563-7113 FAX: 508-564-9946 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "802-223-5352",
+        "role": "facility_contact_candidate",
+        "confidence": "medium",
+        "context": "n for the larger cemetery is available, it is provided below. Green Mount Cemetery Phone: (802) 223-5352 Website: http://www.montpelier-vt.org/158/Green-Mount-Cemetery NOTE: Link will take you o"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Office Hours: Monday thru Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays except Memorial Day.",
+        "confidence": "low"
+      },
+      {
+        "text": "Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_062",
+    "name": "Lakeside Cemetery Soldiers' Lot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "062",
+    "website": "https://www.cem.va.gov/cems/lots/Lakeside.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/Lakeside.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0007_nca_062_Lakeside.asp",
+    "raw_sha256": "075643540786092cad85249fcc9f98ba79f7169b2e70b746b2f225d5a0f46c23",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 68144,
+      "elapsed_ms": 599,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "810-987-6000",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "nts and more. » Find Your Loved One Address: 3663 10th Avenue Port Huron, MI 48060 Phone: 810-987-6000 FAX: 810-982-7872 Cemetery Map Kiosk : No Driving Directions Enter your starting address"
+      },
+      {
+        "phone": "810-982-7872",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "nd Your Loved One Address: 3663 10th Avenue Port Huron, MI 48060 Phone: 810-987-6000 FAX: 810-982-7872 Cemetery Map Kiosk : No Driving Directions Enter your starting address : Map: View Map IM"
+      },
+      {
+        "phone": "810-984-9725",
+        "role": "facility_contact_candidate",
+        "confidence": "medium",
+        "context": "ral holidays. (If office is closed during these hours, contact the City Clerk's office at 810-984-9725 ext. 0 for assistance.) BURIAL SPACE This soldiers' lot is closed to interments. ELIGIBIL"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday through Friday, 7:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays.",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_063",
+    "name": "Mound Cemetery Soldiers' Lot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "063",
+    "website": "https://www.cem.va.gov/cems/lots/Mound.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/Mound.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0008_nca_063_Mound.asp",
+    "raw_sha256": "188728fcc2ad2b391a38815b074c8ac4c4d7c41cf3c202eaa1b679007cf36c08",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 69891,
+      "elapsed_ms": 762,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "414-382-5300",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "ents and more. » Find Your Loved One Address: 1147 West Boulevard Racine, WI 53405 Phone: 414-382-5300 FAX: 414-382-5321 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "414-382-5321",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "ind Your Loved One Address: 1147 West Boulevard Racine, WI 53405 Phone: 414-382-5300 FAX: 414-382-5321 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "262-636-9188",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "rmation for the larger cemetery is available, it is provided below. Mound Cemetery Phone: 262-636-9188 Fax: 262-635-3338 Website: https://cityofracinewi.gov/parksrec/cemetery/ NOTE: Link will"
+      },
+      {
+        "phone": "262-635-3338",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "rger cemetery is available, it is provided below. Mound Cemetery Phone: 262-636-9188 Fax: 262-635-3338 Website: https://cityofracinewi.gov/parksrec/cemetery/ NOTE: Link will take you outside t"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday through Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays except Memorial Day.",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_064",
+    "name": "Mound City Cemetery Soldiers' Lot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "064",
+    "website": "https://www.cem.va.gov/cems/lots/MoundCity.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/MoundCity.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0009_nca_064_MoundCity.asp",
+    "raw_sha256": "6a19754283aa2c5682801a3c3de0f08c5464976bf667757c57aa9744a42d8403",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 70046,
+      "elapsed_ms": 458,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "913-727-1376",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "ments and more. » Find Your Loved One Address: 414 Elm Street Mound City, KS 66506 Phone: 913-727-1376 FAX: 913-727-1905 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "913-727-1905",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "Find Your Loved One Address: 414 Elm Street Mound City, KS 66506 Phone: 913-727-1376 FAX: 913-727-1905 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday thru Friday 7:30 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays except Memorial Day.",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_065",
+    "name": "Mount Moriah Cemetery Soldiers' Lot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "065",
+    "website": "https://www.cem.va.gov/cems/lots/MountMoriah.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/MountMoriah.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0010_nca_065_MountMoriah.asp",
+    "raw_sha256": "263eef5e57b0068e83a352c229464236e0e221d8fa01cc2ceb80354db239b3bd",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 71107,
+      "elapsed_ms": 473,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "215-222-7510",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "Your Loved One Address: 62nd Street and Kingsessing Avenue Philadelphia, PA 19142 Phone: 215-222-7510 FAX: 215-895-3531 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "215-895-3531",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "dress: 62nd Street and Kingsessing Avenue Philadelphia, PA 19142 Phone: 215-222-7510 FAX: 215-895-3531 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Office Hours: Monday thru Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays except Memorial Day and Veterans Day.",
+        "confidence": "low"
+      },
+      {
+        "text": "Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_066",
+    "name": "Mount Moriah Cemetery Naval Plot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "066",
+    "website": "https://www.cem.va.gov/cems/lots/MountMoriah_Naval.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/MountMoriah_Naval.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0011_nca_066_MountMoriah_Naval.asp",
+    "raw_sha256": "0cd6bf9a35f4fcbdcbed216ef76fded3730fd07eb8101fc68c814f11033d19f0",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 87288,
+      "elapsed_ms": 491,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "215-222-7510",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "Your Loved One Address: 62nd Street and Kingsessing Avenue Philadelphia, PA 19142 Phone: 215-222-7510 FAX: 215-895-3531 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "215-895-3531",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "dress: 62nd Street and Kingsessing Avenue Philadelphia, PA 19142 Phone: 215-222-7510 FAX: 215-895-3531 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday thru Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays except Memorial Day and Veterans Day.",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_067",
+    "name": "Mount Pleasant Cemetery Soldiers' Lot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "067",
+    "website": "https://www.cem.va.gov/cems/lots/MountPleasant.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/MountPleasant.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0012_nca_067_MountPleasant.asp",
+    "raw_sha256": "9ab9ae743fa880b553f82bd7caee79a0201737bcf0893eb4a2f630a8a701634c",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 69915,
+      "elapsed_ms": 472,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "508-563-7113",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "documents and more. » Find Your Loved One Address: North Street Augusta, ME 04330 Phone: 508-563-7113 FAX: 508-564-9946 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "508-564-9946",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "e. » Find Your Loved One Address: North Street Augusta, ME 04330 Phone: 508-563-7113 FAX: 508-564-9946 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday thru Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays except Memorial Day.",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_068",
+    "name": "Oakdale Cemetery Soldiers' Lot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "068",
+    "website": "https://www.cem.va.gov/cems/lots/Oakdale.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/Oakdale.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0013_nca_068_Oakdale.asp",
+    "raw_sha256": "4da5c3c44c1e67e5bf81284a734b726718f356548c553777bc83281986dc8512",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 71776,
+      "elapsed_ms": 499,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "309-784-0000",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "s and more. » Find Your Loved One Address: 2501 Eastern Avenue Davenport, IA 52807 Phone: 309-784-0000 FAX: 309-782-2097 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "309-782-2097",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "Your Loved One Address: 2501 Eastern Avenue Davenport, IA 52807 Phone: 309-784-0000 FAX: 309-782-2097 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "563-324-5121",
+        "role": "facility_contact_candidate",
+        "confidence": "medium",
+        "context": "r the larger cemetery is available, it is provided below. Oakdale Memorial Gardens Phone: 563-324-5121 Website: https://oakdalememorialgardens.org NOTE: Link will take you outside the VA websi"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday thru Friday 7:30 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays except Memorial Day and Veterans Day.",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_069",
+    "name": "Prospect Hill Cemetery Soldiers' Lot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "069",
+    "website": "https://www.cem.va.gov/cems/lots/ProspectHill_PA.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/ProspectHill_PA.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0014_nca_069_ProspectHill_PA.asp",
+    "raw_sha256": "81881ac47d5a19e7d96f745e543d7e3488c68329c7493951c3cf5e6bb38f653c",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 70214,
+      "elapsed_ms": 498,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "717-865-5254",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "ts and more. » Find Your Loved One Address: 700 North George Street York, PA 17404 Phone: 717-865-5254 FAX: 717-865-5256 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "717-865-5256",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "d Your Loved One Address: 700 North George Street York, PA 17404 Phone: 717-865-5254 FAX: 717-865-5256 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "717-843-8006",
+        "role": "facility_contact_candidate",
+        "confidence": "medium",
+        "context": "for the larger cemetery is available, it is provided below. Prospect Hill Cemetery Phone: (717) 843-8006 Website: http://prospecthill.org NOTE: Link will take you outside the VA website. VA does"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Office Hours: Monday through Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays except Memorial Day.",
+        "confidence": "low"
+      },
+      {
+        "text": "Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_070",
+    "name": "Prospect Hill Cemetery Soldiers' Lot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "070",
+    "website": "https://www.cem.va.gov/cems/lots/ProspectHill_VT.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/ProspectHill_VT.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0015_nca_070_ProspectHill_VT.asp",
+    "raw_sha256": "a6ba2c748290fe6e8214340f715d6f91288a41f6c2e321bf056d76efd2ed878c",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 69861,
+      "elapsed_ms": 483,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "508-563-7113",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "nd more. » Find Your Loved One Address: 94 South Main Street Brattleboro, VT 05301 Phone: 508-563-7113 FAX: 508-564-9946 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "508-564-9946",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "ur Loved One Address: 94 South Main Street Brattleboro, VT 05301 Phone: 508-563-7113 FAX: 508-564-9946 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Office Hours: Monday thru Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays except Memorial Day.",
+        "confidence": "low"
+      },
+      {
+        "text": "Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_071",
+    "name": "Woodland Cemetery Soldiers' Lot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "071",
+    "website": "https://www.cem.va.gov/cems/lots/Woodland.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/Woodland.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0016_nca_071_Woodland.asp",
+    "raw_sha256": "31bec7924d69a5e368a06b0e2403a093b0c17ba7e86160ba1a97c868ae67ff20",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 69139,
+      "elapsed_ms": 492,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "330-335-3069",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "and more. » Find Your Loved One Address: 6901 Woodland Avenue Cleveland, OH 44104 Phone: 330-335-3069 FAX: 330-335-5087 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "330-335-5087",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "Your Loved One Address: 6901 Woodland Avenue Cleveland, OH 44104 Phone: 330-335-3069 FAX: 330-335-5087 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "216-348-7217",
+        "role": "facility_contact_candidate",
+        "confidence": "medium",
+        "context": "tion for the larger cemetery is available, it is provided below. Woodland Cemetery Phone: (216) 348-7217 This soldiers' lot is overseen by Ohio Western Reserve National Cemetery . Please contact"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Office Hours: Monday thru Friday 7:30 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed Federal Holidays except Memorial Day.",
+        "confidence": "low"
+      },
+      {
+        "text": "Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_072",
+    "name": "Woodlawn Cemetery Soldiers' Lot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "072",
+    "website": "https://www.cem.va.gov/cems/lots/Woodlawn.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/Woodlawn.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0017_nca_072_Woodlawn.asp",
+    "raw_sha256": "4b2fc43337dc6dda100405945c9da21900d783a42f5ed67984bfa8d3e310b275",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 68700,
+      "elapsed_ms": 484,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "508-563-7113",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "cal documents and more. » Find Your Loved One Address: Harvard Road Ayer, MA 01432 Phone: 508-563-7113 FAX: 508-564-9946 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "508-564-9946",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "more. » Find Your Loved One Address: Harvard Road Ayer, MA 01432 Phone: 508-563-7113 FAX: 508-564-9946 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday thru Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays except Memorial Day.",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_073",
+    "name": "Confederate Mound",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "073",
+    "website": "https://www.cem.va.gov/cems/lots/Confederate_Mound.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/Confederate_Mound.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0018_nca_073_Confederate_Mound.asp",
+    "raw_sha256": "233da3b3371a8eb1f7a7fad048ff035e1c72add93f51c85440313e2a26a4f682",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 71024,
+      "elapsed_ms": 491,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "815-423-9958",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "d Your Loved One Address: Oak Woods Cemetery, 1035 E 67th Street Chicago, IL 60637 Phone: 815-423-9958 FAX: 815-423-5824 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "815-423-5824",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "ddress: Oak Woods Cemetery, 1035 E 67th Street Chicago, IL 60637 Phone: 815-423-9958 FAX: 815-423-5824 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "773-288-3800",
+        "role": "facility_contact_candidate",
+        "confidence": "medium",
+        "context": "ion for the larger cemetery is available, it is provided below. Oak Woods Cemetery Phone: (773) 288-3800 This soldiers' lot is overseen by Abraham Lincoln National Cemetery . Please contact the"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday thru Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays, excluding Memorial Day.",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_074",
+    "name": "Crown Hill Confederate Plot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "074",
+    "website": "https://www.cem.va.gov/cems/lots/CrownHill.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/CrownHill.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0019_nca_074_CrownHill.asp",
+    "raw_sha256": "c08a9c94cb3c1934d777d2d8f791688beee5c78d12c1a66285e57d8f70225553",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 71955,
+      "elapsed_ms": 470,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "765-674-0284",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "and more. » Find Your Loved One Address: 700 W 38th Street Indianapolis, IN 46208 Phone: 765-674-0284 FAX: 765-674-4521 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "765-674-4521",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "Your Loved One Address: 700 W 38th Street Indianapolis, IN 46208 Phone: 765-674-0284 FAX: 765-674-4521 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "317-925-8231",
+        "role": "facility_contact_candidate",
+        "confidence": "medium",
+        "context": "on for the larger cemetery is available, it is provided below. Crown Hill Cemetery Phone: 317-925-8231 Website: www.crownhill.org Note: Link will take you outside the VA website. VA does not e"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday thru Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays except Memorial Day.",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_075",
+    "name": "Camp Chase Confederate Cemetery",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "075",
+    "website": "https://www.cem.va.gov/cems/lots/CampChase.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/CampChase.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0020_nca_075_CampChase.asp",
+    "raw_sha256": "8e60d734379f9fddbec8cf6393faa317cc0bddf6759f47312d3b068bf432472e",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 71867,
+      "elapsed_ms": 479,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "937-268-2221",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "and more. » Find Your Loved One Address: 2900 Sullivant Avenue Columbus, OH 43204 Phone: 937-268-2221 FAX: 937-268-2225 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "937-268-2225",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "Your Loved One Address: 2900 Sullivant Avenue Columbus, OH 43204 Phone: 937-268-2221 FAX: 937-268-2225 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday thru Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays except Memorial Day.",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_076",
+    "name": "Confederate Stockade Cemetery",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "076",
+    "website": "https://www.cem.va.gov/cems/lots/Confederate_Stockade.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/Confederate_Stockade.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0021_nca_076_Confederate_Stockade.asp",
+    "raw_sha256": "56d80a1f589ff85d9d579e7ea55561be596677cffe9ef54c97afb576880fc2fe",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 72823,
+      "elapsed_ms": 493,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "330-335-3069",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "ments and more. » Find Your Loved One Address: Johnson's Island Sandusky, OH 44870 Phone: 330-335-3069 FAX: 330-335-5087 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "330-335-5087",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "Find Your Loved One Address: Johnson's Island Sandusky, OH 44870 Phone: 330-335-3069 FAX: 330-335-5087 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Office Hours: Monday thru Friday 7:30 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed Federal Holidays except Memorial Day.",
+        "confidence": "low"
+      },
+      {
+        "text": "Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_077",
+    "name": "North Alton Confederate Cemetery",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "077",
+    "website": "https://www.cem.va.gov/cems/lots/North_Alton.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/North_Alton.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0022_nca_077_North_Alton.asp",
+    "raw_sha256": "3bd29620c71886121cad440d978ef6f43006ac0d1e0b137dbf967269edad92f5",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 71487,
+      "elapsed_ms": 484,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "314-845-8320",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "cuments and more. » Find Your Loved One Address: 635 Rozier Street Alton, IL 62002 Phone: 314-845-8320 FAX: 314-845-8355 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "314-845-8355",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "» Find Your Loved One Address: 635 Rozier Street Alton, IL 62002 Phone: 314-845-8320 FAX: 314-845-8355 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday thru Friday 8:00 a.m.",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_078",
+    "name": "Point Lookout Confederate Cemetery",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "078",
+    "website": "https://www.cem.va.gov/cems/lots/Point_Lookout.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/Point_Lookout.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0023_nca_078_Point_Lookout.asp",
+    "raw_sha256": "be0dd9885c7cdd6073ce4f32af3501590fc702b428ac6bde238b282baea4d116",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 70421,
+      "elapsed_ms": 473,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "410-644-9696",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "nts and more. » Find Your Loved One Address: Point Lookout Road Scotland, MD 20680 Phone: 410-644-9696 FAX: 410-644-1563 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "410-644-1563",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "nd Your Loved One Address: Point Lookout Road Scotland, MD 20680 Phone: 410-644-9696 FAX: 410-644-1563 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Office Hours: This cemetery is supervised by Baltimore National Cemetery.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_079",
+    "name": "Rock Island Confederate Cemetery",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "079",
+    "website": "https://www.cem.va.gov/cems/lots/RockIsland_Confed.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/RockIsland_Confed.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0024_nca_079_RockIsland_Confed.asp",
+    "raw_sha256": "8cc5489c68cfc14318c23db9948680f532eaf435f92668fca9c3c06b28d98ea7",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 73325,
+      "elapsed_ms": 1068,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "309-784-0000",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "d Your Loved One Address: Rock Island Arsenal, Rodman Avenue Rock Island, IL 61299 Phone: 309-784-0000 FAX: 309-782-2097 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "309-782-2097",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "ddress: Rock Island Arsenal, Rodman Avenue Rock Island, IL 61299 Phone: 309-784-0000 FAX: 309-782-2097 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Office Hours: Monday thru Friday 7:30 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays except Memorial Day and Veterans Day.",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_080",
+    "name": "Union Confederate Monument Site",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "080",
+    "website": "https://www.cem.va.gov/cems/lots/Union_Confed.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/Union_Confed.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0025_nca_080_Union_Confed.asp",
+    "raw_sha256": "eb55b8f70cdc6ab623ef8fc33766d4772d387e0098eea0228cd3b25f0dfabfb7",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 71634,
+      "elapsed_ms": 519,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "913-727-1376",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "and more. » Find Your Loved One Address: 227 E 28th Terrace Kansas City, MO 64108 Phone: 913-727-1376 FAX: 913-727-1905 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "913-727-1905",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "Your Loved One Address: 227 E 28th Terrace Kansas City, MO 64108 Phone: 913-727-1376 FAX: 913-727-1905 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "816-472-4990",
+        "role": "facility_contact_candidate",
+        "confidence": "medium",
+        "context": "Friday, 1:00 p.m. until 3:00 p.m.; they are closed on holidays. Their telephone number is 816-472-4990. The private and community cemeteries that contain NCA soldiers' and government lots and"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday through Saturday 7:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays except Memorial Day.",
+        "confidence": "low"
+      },
+      {
+        "text": "The Union Cemetery Historical Society Office is open Wednesday, 9:00 a.m.",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_081",
+    "name": "Woodlawn Monument Site",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "081",
+    "website": "https://www.cem.va.gov/cems/lots/Woodlawn_Monument.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/Woodlawn_Monument.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0026_nca_081_Woodlawn_Monument.asp",
+    "raw_sha256": "7fcf4d4894e130f78e5b33d05d4ade58622d066ee9520cc15fcbd143a4117150",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 68499,
+      "elapsed_ms": 492,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "217-492-4070",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "Find Your Loved One Address: North 3rd Street and 4th Avenue Terre Haute, IN 47802 Phone: 217-492-4070 FAX: 217-492-4072 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "217-492-4072",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "e Address: North 3rd Street and 4th Avenue Terre Haute, IN 47802 Phone: 217-492-4070 FAX: 217-492-4072 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "812-877-2531",
+        "role": "facility_contact_candidate",
+        "confidence": "medium",
+        "context": "tion for the larger cemetery is available, it is provided below. Woodlawn Cemetery Phone: (812) 877-2531 Website: http://www.terrehaute.in.gov/departments/cemetery NOTE: Link will take you outsi"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Office Hours: Monday thru Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays, excluding Memorial Day.",
+        "confidence": "low"
+      },
+      {
+        "text": "Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_082",
+    "name": "Fort Mackinac Post Cemetery",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "082",
+    "website": "https://www.cem.va.gov/cems/lots/Fort_Mackinac.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/Fort_Mackinac.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0027_nca_082_Fort_Mackinac.asp",
+    "raw_sha256": "73e10f43d34e704316ee8c55033e0ba600301b495ea30ec0fb25825b57165711",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 68647,
+      "elapsed_ms": 522,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "248-328-0386",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "more. » Find Your Loved One Address: Mackinac State Park Mackinac Island, MI 49757 Phone: 248-328-0386 FAX: 248-328-0612 Cemetery Map Kiosk : No Driving Directions Enter your starting address"
+      },
+      {
+        "phone": "248-328-0612",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "Loved One Address: Mackinac State Park Mackinac Island, MI 49757 Phone: 248-328-0386 FAX: 248-328-0612 Cemetery Map Kiosk : No Driving Directions Enter your starting address : Map: View Map IM"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday thru Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays.",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_083",
+    "name": "Fort Winnebago Cemetery Soldiers' Lot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "083",
+    "website": "https://www.cem.va.gov/cems/lots/Fort_Winnebago.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/Fort_Winnebago.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0028_nca_083_Fort_Winnebago.asp",
+    "raw_sha256": "048f58855bd2f00c6bf261142abfeff5950e49c2b17483794a624a05ffac2b7d",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 69842,
+      "elapsed_ms": 519,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "414-382-5300",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "ents and more. » Find Your Loved One Address: County Road EE Portage, WI, WI 53901 Phone: 414-382-5300 FAX: 414-382-5321 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "414-382-5321",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "ind Your Loved One Address: County Road EE Portage, WI, WI 53901 Phone: 414-382-5300 FAX: 414-382-5321 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday through Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays except Memorial Day.",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_088",
+    "name": "Albany Rural Cemetery Soldiers' Lot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "088",
+    "website": "https://www.cem.va.gov/cems/lots/Albany_Rural.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/Albany_Rural.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0029_nca_088_Albany_Rural.asp",
+    "raw_sha256": "4575bb54b696aa782df0155e4691dbc402574ffafb2bcd2055e076d156e854ac",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 69503,
+      "elapsed_ms": 552,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "518-581-9128",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "ocuments and more. » Find Your Loved One Address: Cemetery Avenue Albany, NY 12204 Phone: 518-581-9128 FAX: 518-583-6975 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "518-583-6975",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "» Find Your Loved One Address: Cemetery Avenue Albany, NY 12204 Phone: 518-581-9128 FAX: 518-583-6975 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "518-463-7017",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "for the larger cemetery is available, it is provided below. Albany Rural Cemetery Phone: 518-463-7017 Fax: 518-463-0787 Note: Link will take you outside the VA website. VA does not endorse an"
+      },
+      {
+        "phone": "518-463-0787",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "metery is available, it is provided below. Albany Rural Cemetery Phone: 518-463-7017 Fax: 518-463-0787 Note: Link will take you outside the VA website. VA does not endorse and is not responsib"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday thru Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays.",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_089",
+    "name": "Fort McClellan EPW Cemetery",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "089",
+    "website": "https://www.cem.va.gov/cems/lots/FtMcClellanEPW.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/FtMcClellanEPW.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0030_nca_089_FtMcClellanEPW.asp",
+    "raw_sha256": "7bb49f6e648f54528a4686a0f59d078c85c9b8fd13fbbc390f602ee58570dd22",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 69006,
+      "elapsed_ms": 803,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "205-665-9039",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "Address: 3541 Shipley Road Anniston, AL 36201 [Do not mail items to this address] Phone: 205-665-9039 FAX: 205-665-7790 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "205-665-7790",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "pley Road Anniston, AL 36201 [Do not mail items to this address] Phone: 205-665-9039 FAX: 205-665-7790 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "PW Cemetery HOURS Hours (visitation and office hours): Cemetery-Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Please contact Alabama National Cemetery (Alabama National Cemetery office hours are Monday thru Friday 8:00 a.m.",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_120",
+    "name": "Allegheny Cemetery Soldiers' Lot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "120",
+    "website": "https://www.cem.va.gov/cems/lots/Allegheny.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/Allegheny.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0031_nca_120_Allegheny.asp",
+    "raw_sha256": "105a52897fcd3a7f50286c25c00daa3949f824b752b5076e841d55a702a5b958",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 70809,
+      "elapsed_ms": 548,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "724-746-4363",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "s and more. » Find Your Loved One Address: 4734 Butler Street Pittsburgh, PA 15201 Phone: 724-746-4363 FAX: 724-746-4360 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "724-746-4360",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "Your Loved One Address: 4734 Butler Street Pittsburgh, PA 15201 Phone: 724-746-4363 FAX: 724-746-4360 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "412-682-1624",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "ion for the larger cemetery is available, it is provided below. Allegheny Cemetery Phone: 412-682-1624 Fax: 412-622-0655 * External Link Disclaimer: This link will open in a new tab and take y"
+      },
+      {
+        "phone": "412-622-0655",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "cemetery is available, it is provided below. Allegheny Cemetery Phone: 412-682-1624 Fax: 412-622-0655 * External Link Disclaimer: This link will open in a new tab and take you outside of the"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday thru Friday 8:30 a.m.",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_121",
+    "name": "Ashland Cemetery Soldiers' Lot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "121",
+    "website": "https://www.cem.va.gov/cems/lots/Ashland.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/Ashland.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0032_nca_121_Ashland.asp",
+    "raw_sha256": "5e4a92a4c0cb1366fdea3cdcb26f85778010b3c9e242ce8801232529af50f3a4",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 70107,
+      "elapsed_ms": 525,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "717-865-5254",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "d more. » Find Your Loved One Address: 630 South Hanover Street Carlisle, PA 17013 Phone: 717-865-5254 FAX: 717-865-5256 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "717-865-5256",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "r Loved One Address: 630 South Hanover Street Carlisle, PA 17013 Phone: 717-865-5254 FAX: 717-865-5256 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday through Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays except Memorial Day.",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_122",
+    "name": "Forest Home Cemetery Soldiers' Lot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "122",
+    "website": "https://www.cem.va.gov/cems/lots/Forest_Home.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/Forest_Home.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0033_nca_122_Forest_Home.asp",
+    "raw_sha256": "7d61f5f9c5f0e0bb5bd115f6d6f2e7ed6c73925a00036789811614413a9abaa0",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 70820,
+      "elapsed_ms": 518,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "414-382-5300",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "e. » Find Your Loved One Address: 2405 West Forest Home Avenue Milwaukee, WI 53215 Phone: 414-382-5300 FAX: 414-382-5321 Cemetery Map Kiosk : No Driving Directions Enter your starting address"
+      },
+      {
+        "phone": "414-382-5321",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "ed One Address: 2405 West Forest Home Avenue Milwaukee, WI 53215 Phone: 414-382-5300 FAX: 414-382-5321 Cemetery Map Kiosk : No Driving Directions Enter your starting address : Map: View Map IM"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "414-645-2632",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "n for the larger cemetery is available, it is provided below. Forest Home Cemetery Phone: (414) 645-2632 Fax: (414) 645-2637 Website: www.foresthomecemetery.com NOTE: Link will take you outside"
+      },
+      {
+        "phone": "414-645-2637",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "etery is available, it is provided below. Forest Home Cemetery Phone: (414) 645-2632 Fax: (414) 645-2637 Website: www.foresthomecemetery.com NOTE: Link will take you outside the VA website. VA d"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday thru Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays except Memorial Day.",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_123",
+    "name": "Forest Hill Cemetery Soldiers' Lot",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "123",
+    "website": "https://www.cem.va.gov/cems/lots/Forest_Hill.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/lots/Forest_Hill.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0034_nca_123_Forest_Hill.asp",
+    "raw_sha256": "7a9aeb910be0107f21a3bddd6af42bb1393d93c37f47a27833f766fca8ed2643",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 72801,
+      "elapsed_ms": 549,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "414-382-5300",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "cuments and more. » Find Your Loved One Address: 1 Speedway Road Madison, WI 53705 Phone: 414-382-5300 FAX: 414-382-5321 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your st"
+      },
+      {
+        "phone": "414-382-5321",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "» Find Your Loved One Address: 1 Speedway Road Madison, WI 53705 Phone: 414-382-5300 FAX: 414-382-5321 Cemetery Map: Not Available Kiosk : No Driving Directions Enter your starting address : M"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "608-266-4720",
+        "role": "facility_contact_candidate",
+        "confidence": "medium",
+        "context": "n for the larger cemetery is available, it is provided below. Forest Hill Cemetery Phone: 608-266-4720 Website: https://www.cityofmadison.com/parks/find-a-park/forest-hill-cemetery NOTE: Link"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday through Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays except Memorial Day.",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_800",
+    "name": "Alton National Cemetery",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "800",
+    "website": "https://www.cem.va.gov/cems/nchp/Alton.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/nchp/Alton.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0035_nca_800_Alton.asp",
+    "raw_sha256": "b3897c8f4cc2d5b52200177ed7b87500470296bae970351aa9212f6d810913ba",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 70586,
+      "elapsed_ms": 540,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "314-845-8320",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "ocuments and more. » Find Your Loved One Address: 600 Pearl Street Alton, IL 62002 Phone: 314-845-8320 FAX: 314-845-8355 Cemetery Map Kiosk : No Driving Directions Enter your starting address"
+      },
+      {
+        "phone": "314-845-8355",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "» Find Your Loved One Address: 600 Pearl Street Alton, IL 62002 Phone: 314-845-8320 FAX: 314-845-8355 Cemetery Map Kiosk : No Driving Directions Enter your starting address : Map: View Map IM"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from dawn to dusk.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: This cemetery is under the supervision of the Jefferson Barracks National Cemetery .",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_801",
+    "name": "Annapolis National Cemetery",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "801",
+    "website": "https://www.cem.va.gov/cems/nchp/Annapolis.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/nchp/Annapolis.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0036_nca_801_Annapolis.asp",
+    "raw_sha256": "3be882114e69c72fb1a6174c2b5d87b906cbf9e3e4cdd71ab2576c2290bd0fa0",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 71144,
+      "elapsed_ms": 820,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "410-644-9696",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "ments and more. » Find Your Loved One Address: 800 West Street Annapolis, MD 21401 Phone: 410-644-9696 FAX: 410-644-1563 Cemetery Map Kiosk : No Driving Directions Enter your starting address"
+      },
+      {
+        "phone": "410-644-1563",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "Find Your Loved One Address: 800 West Street Annapolis, MD 21401 Phone: 410-644-9696 FAX: 410-644-1563 Cemetery Map Kiosk : No Driving Directions Enter your starting address : Map: View Map IM"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "410-576-6133",
+        "role": "contact_candidate",
+        "confidence": "low",
+        "context": "can Legion or VFW. Local Numbers for Military Funeral Honors: U.S. Army / U.S. Air Force: 410-576-6133 (MD National Guard); 301-677-2206 (Fort Meade) U.S. Coast Guard: 757-617-4971 or 757-686-"
+      },
+      {
+        "phone": "301-677-2206",
+        "role": "contact_candidate",
+        "confidence": "low",
+        "context": "or Military Funeral Honors: U.S. Army / U.S. Air Force: 410-576-6133 (MD National Guard); 301-677-2206 (Fort Meade) U.S. Coast Guard: 757-617-4971 or 757-686-4032 U.S. Marine Corps: 866-826-36"
+      },
+      {
+        "phone": "757-617-4971",
+        "role": "contact_candidate",
+        "confidence": "low",
+        "context": "Air Force: 410-576-6133 (MD National Guard); 301-677-2206 (Fort Meade) U.S. Coast Guard: 757-617-4971 or 757-686-4032 U.S. Marine Corps: 866-826-3628 U.S. Navy: 301-677-0409 or 202-433-4589 F"
+      },
+      {
+        "phone": "757-686-4032",
+        "role": "contact_candidate",
+        "confidence": "low",
+        "context": "576-6133 (MD National Guard); 301-677-2206 (Fort Meade) U.S. Coast Guard: 757-617-4971 or 757-686-4032 U.S. Marine Corps: 866-826-3628 U.S. Navy: 301-677-0409 or 202-433-4589 For educational m"
+      },
+      {
+        "phone": "866-826-3628",
+        "role": "contact_candidate",
+        "confidence": "low",
+        "context": "1-677-2206 (Fort Meade) U.S. Coast Guard: 757-617-4971 or 757-686-4032 U.S. Marine Corps: 866-826-3628 U.S. Navy: 301-677-0409 or 202-433-4589 For educational materials and additional informat"
+      },
+      {
+        "phone": "301-677-0409",
+        "role": "facility_contact_candidate",
+        "confidence": "medium",
+        "context": "U.S. Coast Guard: 757-617-4971 or 757-686-4032 U.S. Marine Corps: 866-826-3628 U.S. Navy: 301-677-0409 or 202-433-4589 For educational materials and additional information on this cemetery, pl"
+      },
+      {
+        "phone": "202-433-4589",
+        "role": "facility_contact_candidate",
+        "confidence": "medium",
+        "context": ": 757-617-4971 or 757-686-4032 U.S. Marine Corps: 866-826-3628 U.S. Navy: 301-677-0409 or 202-433-4589 For educational materials and additional information on this cemetery, please visit the E"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: This cemetery is supervised by the Baltimore National Cemetery .",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_802",
+    "name": "Baltimore National Cemetery",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "802",
+    "website": "https://www.cem.va.gov/cems/nchp/Baltimore.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/nchp/Baltimore.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0037_nca_802_Baltimore.asp",
+    "raw_sha256": "1f3bec47ad252d9a27041907aec70336ac9b32a76f1cae773356f8826234b11c",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 82871,
+      "elapsed_ms": 542,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "410-644-9696",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "and more. » Find Your Loved One Address: 5501 Frederick Avenue Baltimore, MD 21228 Phone: 410-644-9696 FAX: 410-644-1563 Cemetery Map Kiosk : Yes Follow Us: Facebook Driving Directions Enter y"
+      },
+      {
+        "phone": "410-644-1563",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "our Loved One Address: 5501 Frederick Avenue Baltimore, MD 21228 Phone: 410-644-9696 FAX: 410-644-1563 Cemetery Map Kiosk : Yes Follow Us: Facebook Driving Directions Enter your starting addre"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "301-677-2206",
+        "role": "contact_candidate",
+        "confidence": "low",
+        "context": "erican Legion or VFW. Local Numbers for Military Funeral Honors: Maryland National Guard: 301-677-2206 (Fort Meade) U.S. Air Force / U.S. Army: 410-576-6133 U.S. Coast Guard: 757-617-4971 or 7"
+      },
+      {
+        "phone": "410-576-6133",
+        "role": "contact_candidate",
+        "confidence": "low",
+        "context": "al Honors: Maryland National Guard: 301-677-2206 (Fort Meade) U.S. Air Force / U.S. Army: 410-576-6133 U.S. Coast Guard: 757-617-4971 or 757-686-4032 U.S. Marine Corps: 866-826-3628 U.S. Navy:"
+      },
+      {
+        "phone": "757-617-4971",
+        "role": "contact_candidate",
+        "confidence": "low",
+        "context": "ard: 301-677-2206 (Fort Meade) U.S. Air Force / U.S. Army: 410-576-6133 U.S. Coast Guard: 757-617-4971 or 757-686-4032 U.S. Marine Corps: 866-826-3628 U.S. Navy: 301-677-0409 or 202-433-4589 F"
+      },
+      {
+        "phone": "757-686-4032",
+        "role": "contact_candidate",
+        "confidence": "low",
+        "context": "6 (Fort Meade) U.S. Air Force / U.S. Army: 410-576-6133 U.S. Coast Guard: 757-617-4971 or 757-686-4032 U.S. Marine Corps: 866-826-3628 U.S. Navy: 301-677-0409 or 202-433-4589 For educational m"
+      },
+      {
+        "phone": "866-826-3628",
+        "role": "contact_candidate",
+        "confidence": "low",
+        "context": "U.S. Army: 410-576-6133 U.S. Coast Guard: 757-617-4971 or 757-686-4032 U.S. Marine Corps: 866-826-3628 U.S. Navy: 301-677-0409 or 202-433-4589 For educational materials and additional informat"
+      },
+      {
+        "phone": "301-677-0409",
+        "role": "facility_contact_candidate",
+        "confidence": "medium",
+        "context": "U.S. Coast Guard: 757-617-4971 or 757-686-4032 U.S. Marine Corps: 866-826-3628 U.S. Navy: 301-677-0409 or 202-433-4589 For educational materials and additional information on this cemetery, pl"
+      },
+      {
+        "phone": "202-433-4589",
+        "role": "facility_contact_candidate",
+        "confidence": "medium",
+        "context": ": 757-617-4971 or 757-686-4032 U.S. Marine Corps: 866-826-3628 U.S. Navy: 301-677-0409 or 202-433-4589 For educational materials and additional information on this cemetery, please visit the E"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday thru Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays except Memorial Day 8:00 a.m.",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_803",
+    "name": "Bath National Cemetery",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "803",
+    "website": "https://www.cem.va.gov/cems/nchp/Bath.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/nchp/Bath.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0038_nca_803_Bath.asp",
+    "raw_sha256": "7a876ce1da7fa11a3e3b4b96e90c3f23bd49c701be493e4708f1021d1b30ef47",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 74747,
+      "elapsed_ms": 519,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "607-664-4853",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": ". » Find Your Loved One Address: VA Medical Center, San Juan Avenue Bath, NY 14810 Phone: 607-664-4853 FAX: 607-664-4761 Cemetery Map Kiosk : Yes Driving Directions Enter your starting address"
+      },
+      {
+        "phone": "607-664-4761",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "d One Address: VA Medical Center, San Juan Avenue Bath, NY 14810 Phone: 607-664-4853 FAX: 607-664-4761 Cemetery Map Kiosk : Yes Driving Directions Enter your starting address : Map: View Map I"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "716-236-3182",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "e telephone numbers listed below or contact your local American Legion or VFW. Air Force: 716-236-3182 or 518-344-2586 Army and National Guard: Phone: 585-783-5356 / Fax: 716-374-3269 Coast Gu"
+      },
+      {
+        "phone": "518-344-2586",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "ers listed below or contact your local American Legion or VFW. Air Force: 716-236-3182 or 518-344-2586 Army and National Guard: Phone: 585-783-5356 / Fax: 716-374-3269 Coast Guard: 216-902-611"
+      },
+      {
+        "phone": "585-783-5356",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "an Legion or VFW. Air Force: 716-236-3182 or 518-344-2586 Army and National Guard: Phone: 585-783-5356 / Fax: 716-374-3269 Coast Guard: 216-902-6117 Marine Corps: 866-826-3628 Navy and Merchan"
+      },
+      {
+        "phone": "716-374-3269",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "r Force: 716-236-3182 or 518-344-2586 Army and National Guard: Phone: 585-783-5356 / Fax: 716-374-3269 Coast Guard: 216-902-6117 Marine Corps: 866-826-3628 Navy and Merchant Marine: 860-694-34"
+      },
+      {
+        "phone": "216-902-6117",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "18-344-2586 Army and National Guard: Phone: 585-783-5356 / Fax: 716-374-3269 Coast Guard: 216-902-6117 Marine Corps: 866-826-3628 Navy and Merchant Marine: 860-694-3475 For educational materia"
+      },
+      {
+        "phone": "866-826-3628",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "al Guard: Phone: 585-783-5356 / Fax: 716-374-3269 Coast Guard: 216-902-6117 Marine Corps: 866-826-3628 Navy and Merchant Marine: 860-694-3475 For educational materials and additional informati"
+      },
+      {
+        "phone": "860-694-3475",
+        "role": "facility_contact_candidate",
+        "confidence": "medium",
+        "context": "6-374-3269 Coast Guard: 216-902-6117 Marine Corps: 866-826-3628 Navy and Merchant Marine: 860-694-3475 For educational materials and additional information on this cemetery, please visit the E"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday through Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Closed federal holidays.",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_804",
+    "name": "Beverly National Cemetery",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "804",
+    "website": "https://www.cem.va.gov/cems/nchp/Beverly.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/nchp/Beverly.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0039_nca_804_Beverly.asp",
+    "raw_sha256": "5848f9e87a1682847b4545bd69f6c2b7c79bf1a393d49cf3d01a29ef2adb66ae",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 73780,
+      "elapsed_ms": 564,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "215-222-7510",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "nts and more. » Find Your Loved One Address: 916 Bridgeboro Road Beverly, NJ 08010 Phone: 215-222-7510 FAX: 215-895-3531 Cemetery Map Kiosk : Yes Driving Directions Enter your starting address"
+      },
+      {
+        "phone": "215-895-3531",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "nd Your Loved One Address: 916 Bridgeboro Road Beverly, NJ 08010 Phone: 215-222-7510 FAX: 215-895-3531 Cemetery Map Kiosk : Yes Driving Directions Enter your starting address : Map: View Map I"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: This cemetery is administered by Washington Crossing National Cemetery .",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "facility_id": "nca_805",
+    "name": "Calverton National Cemetery",
+    "facility_type": "va_cemetery",
+    "visn": null,
+    "station_code": "805",
+    "website": "https://www.cem.va.gov/cems/nchp/Calverton.asp",
+    "source_url": "https://discover.va.gov/va-locator-facility-list/",
+    "candidate_source_url": "https://www.cem.va.gov/cems/nchp/Calverton.asp",
+    "parser_version": "public-contact-hours-candidates-v1",
+    "extracted_utc": "20260505T195923Z",
+    "review_status": "candidate_not_approved",
+    "approved_for_direct_phone_field": false,
+    "approved_for_direct_hours_field": false,
+    "raw_file": "data\\raw\\public_contact_hours_candidates\\20260505T195923Z\\0040_nca_805_Calverton.asp",
+    "raw_sha256": "7d5baca17181ab0123b3d75f0cc8395c436a72ce2581d849876ba5529d7706a0",
+    "fetch": {
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 75391,
+      "elapsed_ms": 553,
+      "error": null
+    },
+    "phone_candidates": [
+      {
+        "phone": "631-727-5410",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "d more. » Find Your Loved One Address: 210 Princeton Boulevard Calverton, NY 11933 Phone: 631-727-5410 FAX: 631-369-4397 Cemetery Map Kiosk : Yes Follow Us: Facebook Driving Directions Enter y"
+      },
+      {
+        "phone": "631-369-4397",
+        "role": "possibly_non_primary",
+        "confidence": "low",
+        "context": "r Loved One Address: 210 Princeton Boulevard Calverton, NY 11933 Phone: 631-727-5410 FAX: 631-369-4397 Cemetery Map Kiosk : Yes Follow Us: Facebook Driving Directions Enter your starting addre"
+      },
+      {
+        "phone": "866-900-6417",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "LE A BURIAL Fax all discharge documentation to the National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials i"
+      },
+      {
+        "phone": "800-535-1117",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "National Cemetery Scheduling Office at 1-866-900-6417 and follow-up with a phone call to 1-800-535-1117. For information on scheduled burials in our national cemeteries, please go to the Daily"
+      },
+      {
+        "phone": "800-799-4889",
+        "role": "national_or_shared",
+        "confidence": "low",
+        "context": "ll 988 (Press 1) Text to 838255 Chat confidentially now Call TTY if you have hearing loss 1-800-799-4889 If you are in crisis or having thoughts of suicide, visit VeteransCrisisLine.net for more"
+      }
+    ],
+    "hours_candidates": [
+      {
+        "text": "HOURS Visitation Hours: Open daily from sunrise to sunset.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Office Hours: Monday through Friday 8:00 a.m.",
+        "confidence": "medium"
+      },
+      {
+        "text": "Cemetery personnel are available to assist visitors during office hours.",
+        "confidence": "medium"
+      }
+    ]
+  }
+]

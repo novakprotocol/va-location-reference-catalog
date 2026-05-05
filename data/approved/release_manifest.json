@@ -1,9 +1,9 @@
 {
   "catalog_name": "VA IaT Location Reference Catalog",
   "catalog_version": "2026.05.05.1",
-  "created_utc": "2026-05-05T18:48:32.998854+00:00",
-  "git_branch": "work/promote-github-reviewed-diff-20260505-144829",
-  "git_commit": "8ec81a25065fecd771addd87efee8971f641464f",
+  "created_utc": "2026-05-05T19:59:46.167857+00:00",
+  "git_branch": "work/public-contact-hours-candidates-v1-from-7a07cca-20260505T195923Z",
+  "git_commit": "7a07cca980177baf125d0b4aa6dfa8359d0a2bc9",
   "record_count": 2137,
   "release_channel": "candidate",
   "schema_version": "1.0.0",
