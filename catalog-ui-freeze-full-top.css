@@ -1,24 +1,11 @@
 /*
-  VA Location Catalog public UI full-top freeze layer.
+  VA Location Catalog public UI freeze layer - page-scoped version.
 
-  Intent:
-  - Keep the Veterans Crisis Line banner fixed at the viewport top.
-  - Keep the entire public page chrome above the table visible.
-  - Move row scrolling into the table panel instead of the whole browser page.
-  - Keep real table column headers sticky inside that table panel.
-  - Avoid cloned headers so column widths stay aligned with row cells.
+  Rule:
+  - Normal catalog table pages can use an internal row scroll pane with sticky real table headers.
+  - Contact/hours candidate review is NOT a simple catalog table. It must not be forced into the
+    generic table-scroll layout because that can pin the wrong container and create blank columns.
 */
-
-html.catalog-freeze-full-top,
-html.catalog-freeze-full-top body {
-  height: 100%;
-  min-height: 100%;
-  overflow: hidden !important;
-}
-
-html.catalog-freeze-full-top body {
-  padding-top: var(--catalog-vcl-banner-height, 0px) !important;
-}
 
 .catalog-vcl-fixed-top {
   position: fixed !important;
@@ -31,7 +18,19 @@ html.catalog-freeze-full-top body {
   transform: translateZ(0);
 }
 
-.catalog-table-scrollpane-lock {
+/* Table catalog pages only. */
+html.catalog-freeze-full-top,
+html.catalog-freeze-full-top body {
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden !important;
+}
+
+html.catalog-freeze-full-top body {
+  padding-top: var(--catalog-vcl-banner-height, 0px) !important;
+}
+
+html.catalog-freeze-full-top .catalog-table-scrollpane-lock {
   overflow: auto !important;
   position: relative !important;
   height: calc(100vh - var(--catalog-table-scrollpane-top, 0px) - 12px) !important;
@@ -41,20 +40,21 @@ html.catalog-freeze-full-top body {
   border-radius: 12px;
 }
 
-.catalog-table-scrollpane-lock table {
+html.catalog-freeze-full-top .catalog-table-scrollpane-lock table {
   border-collapse: separate !important;
   border-spacing: 0 !important;
 }
 
-.catalog-table-scrollpane-lock thead,
-.catalog-table-scrollpane-lock thead tr,
-.catalog-table-scrollpane-lock thead th {
+html.catalog-freeze-full-top .catalog-table-scrollpane-lock thead,
+html.catalog-freeze-full-top .catalog-table-scrollpane-lock thead tr,
+html.catalog-freeze-full-top .catalog-table-scrollpane-lock thead th,
+html.catalog-freeze-full-top .catalog-table-scrollpane-lock thead td {
   background: #0b1626 !important;
   color: #eaf2ff !important;
 }
 
-.catalog-table-scrollpane-lock thead th,
-.catalog-table-scrollpane-lock th {
+html.catalog-freeze-full-top .catalog-table-scrollpane-lock thead th,
+html.catalog-freeze-full-top .catalog-table-scrollpane-lock thead td {
   position: sticky !important;
   top: 0 !important;
   z-index: 1000 !important;
@@ -64,8 +64,8 @@ html.catalog-freeze-full-top body {
   background-clip: padding-box !important;
 }
 
-.catalog-table-scrollpane-lock thead th::after,
-.catalog-table-scrollpane-lock th::after {
+html.catalog-freeze-full-top .catalog-table-scrollpane-lock thead th::after,
+html.catalog-freeze-full-top .catalog-table-scrollpane-lock thead td::after {
   content: "";
   position: absolute;
   left: 0;
@@ -76,27 +76,34 @@ html.catalog-freeze-full-top body {
   pointer-events: none;
 }
 
-.catalog-table-scrollpane-lock tbody td,
-.catalog-table-scrollpane-lock tbody th {
+/* Candidate review page: leave page layout natural. Only keep VCL at top. */
+html.catalog-candidate-review-safe,
+html.catalog-candidate-review-safe body {
+  min-height: 100%;
+  overflow: auto !important;
+  height: auto !important;
+}
+
+html.catalog-candidate-review-safe body {
+  padding-top: var(--catalog-vcl-banner-height, 0px) !important;
+}
+
+html.catalog-candidate-review-safe .catalog-table-scrollpane-lock {
+  height: auto !important;
+  max-height: none !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+  position: static !important;
+  width: auto !important;
+}
+
+html.catalog-candidate-review-safe thead th,
+html.catalog-candidate-review-safe thead td {
   position: static;
 }
 
-/* Keep horizontal scroll useful and prevent the first visible rows from bleeding through headers. */
-.catalog-table-scrollpane-lock tbody tr:first-child td,
-.catalog-table-scrollpane-lock tbody tr:first-child th {
-  border-top: 0 !important;
-}
-
-/* When pages have a custom nav/header above the table, it remains locked because only this pane scrolls. */
-.catalog-freeze-debug-badge {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-  z-index: 2147482500;
-  font: 11px/1.2 system-ui, -apple-system, Segoe UI, sans-serif;
-  background: rgba(15, 23, 42, 0.88);
-  color: #dbeafe;
-  padding: 6px 8px;
-  border-radius: 999px;
-  border: 1px solid rgba(147, 197, 253, 0.35);
+/* Guard against older public-fixes assets if the browser cached them. */
+html.catalog-candidate-review-safe .catalog-cloned-header,
+html.catalog-candidate-review-safe [data-catalog-cloned-header="true"] {
+  display: none !important;
 }
