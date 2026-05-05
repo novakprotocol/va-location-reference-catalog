@@ -6,7 +6,7 @@ Accepted for pilot.
 
 ## Decision
 
-Treat the VA IaT Location Reference Catalog as a reference-data product.
+Treat the Public VA Facility Location Catalog as a reference-data product.
 
 ## Rationale
 

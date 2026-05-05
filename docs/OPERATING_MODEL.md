@@ -3,7 +3,7 @@
 ## Product identity
 
 ```text
-Product: VA IaT Location Reference Catalog
+Product: Public VA Facility Location Catalog
 Type: governed reference-data product
 Primary output: approved location identity catalog
 Primary use: read-only reference and reconciliation
@@ -91,7 +91,7 @@ Every release should produce:
 
 ```json
 {
-  "catalog_name": "VA IaT Location Reference Catalog",
+  "catalog_name": "Public VA Facility Location Catalog",
   "catalog_version": "2026.05.05.1",
   "schema_version": "1.0.0",
   "git_commit": "abc123",

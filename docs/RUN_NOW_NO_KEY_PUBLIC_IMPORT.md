@@ -31,7 +31,7 @@ https://www.va.gov/directory/
 Run from the repo root:
 
 ```powershell
-cd "$env:USERPROFILE\Desktop\VA-IaT-LocationCatalog-Pilot\va-location-reference-catalog"
+cd "$env:USERPROFILE\Desktop\Public VA Facility Catalog-LocationCatalog-Pilot\va-location-reference-catalog"
 
 git checkout main
 git pull --ff-only origin main
@@ -58,7 +58,7 @@ gh pr create --repo novakprotocol/va-location-reference-catalog --base main --he
 Save or download a public-only source file, then run:
 
 ```powershell
-cd "$env:USERPROFILE\Desktop\VA-IaT-LocationCatalog-Pilot\va-location-reference-catalog"
+cd "$env:USERPROFILE\Desktop\Public VA Facility Catalog-LocationCatalog-Pilot\va-location-reference-catalog"
 
 git checkout main
 git pull --ff-only origin main

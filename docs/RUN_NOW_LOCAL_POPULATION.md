@@ -17,7 +17,7 @@ From a fresh PowerShell window:
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version 3.0
 
-cd "$env:USERPROFILE\Desktop\VA-IaT-LocationCatalog-Pilot\va-location-reference-catalog"
+cd "$env:USERPROFILE\Desktop\Public VA Facility Catalog-LocationCatalog-Pilot\va-location-reference-catalog"
 
 git checkout main
 git pull --ff-only origin main

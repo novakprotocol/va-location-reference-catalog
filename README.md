@@ -1,6 +1,6 @@
 # VA Location Reference Catalog
 
-Private pilot repository for the VA IaT Location Reference Catalog.
+Private pilot repository for the Public VA Facility Location Catalog.
 
 ## Purpose
 
@@ -11,7 +11,7 @@ Generate a public-source, Git-governed, schema-validated, evidence-backed locati
 Use the no-key public-source import lane first.
 
 ```powershell
-cd "$env:USERPROFILE\Desktop\VA-IaT-LocationCatalog-Pilot\va-location-reference-catalog"
+cd "$env:USERPROFILE\Desktop\Public VA Facility Catalog-LocationCatalog-Pilot\va-location-reference-catalog"
 
 git checkout main
 git pull --ff-only origin main

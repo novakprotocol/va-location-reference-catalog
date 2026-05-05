@@ -1,0 +1,18 @@
+{
+  "boundary": "public-source facility address enrichment only; no internal VA data; no patient, claimant, employee, ticket, CMDB, or credential data",
+  "created_utc": "2026-05-05T18:14:45.599574+00:00",
+  "input": "data\\enriched\\va_locations.enriched.json",
+  "outputs": [
+    "data\\enriched\\va_locations.with_physical_addresses.json",
+    "data\\enriched\\va_locations.with_physical_addresses.jsonl",
+    "data\\enriched\\va_locations.with_physical_addresses.csv",
+    "addresses.html"
+  ],
+  "public_html_address_count": 0,
+  "public_naming_files_changed_or_written": 12,
+  "public_phone_count": 0,
+  "record_count": 2137,
+  "record_field_address_count": 2137,
+  "records_with_physical_address": 2137,
+  "result": "PASS"
+}
