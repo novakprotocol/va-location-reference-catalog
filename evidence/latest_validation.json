@@ -1,0 +1,13 @@
+{
+  "denied_marker_finding_count": 6,
+  "duplicate_count": 0,
+  "error_count": 2,
+  "errors": [
+    "possible secret pattern in files: ['README.md', 'docs\\\\RUN_NOW_LOCAL_POPULATION.md', 'scripts\\\\Run-Day0-Populate-And-OpenPR.ps1']",
+    "possible denied data marker in files: ['.github\\\\pull_request_template.md', 'README.md', 'docs\\\\RUN_NOW_LOCAL_POPULATION.md', 'docs\\\\SOURCE_POLICY.md', 'policies\\\\deny_markers.json', 'scripts\\\\Run-Day0-Populate-And-OpenPR.ps1']"
+  ],
+  "record_count": 0,
+  "result": "FAIL",
+  "secret_finding_count": 3,
+  "validated_utc": "2026-05-05T16:01:45.988611+00:00"
+}

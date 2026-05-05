@@ -1,0 +1,9 @@
+{
+  "body_file": "data\\raw\\va_facilities_api\\20260505T160144Z\\response.body",
+  "content_type": "application/json; charset=utf-8",
+  "http_status": 404,
+  "result": "FAIL",
+  "snapshot_utc": "20260505T160144Z",
+  "source_system": "VA Facilities API",
+  "source_url": "https://api.va.gov/services/va_facilities/v0/facilities/all"
+}
