@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VA IaT Location Reference Catalog</title>
+  <style>
+    :root{color-scheme:dark;--bg:#08111f;--panel:#101b2d;--panel2:#14233a;--text:#eef6ff;--muted:#9fb4cf;--line:#263854;--accent:#6ee7ff;--good:#7cf5a4;--warn:#ffd166;--chip:#1b3355;--shadow:rgba(0,0,0,.35)}
+    *{box-sizing:border-box} body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at top left,rgba(110,231,255,.16),transparent 38rem),radial-gradient(circle at top right,rgba(124,245,164,.10),transparent 34rem),var(--bg);color:var(--text)}
+    header{padding:28px clamp(16px,4vw,56px) 18px;border-bottom:1px solid var(--line);background:rgba(8,17,31,.78);position:sticky;top:0;z-index:10;backdrop-filter:blur(14px)}
+    h1{margin:0 0 8px;font-size:clamp(26px,3vw,42px);letter-spacing:-.04em}.subtitle{color:var(--muted);max-width:1080px;line-height:1.45;margin:0}main{padding:20px clamp(16px,4vw,56px) 48px}
+    .notice{border:1px solid #5c4a1d;background:rgba(255,209,102,.10);color:#ffe6a8;border-radius:14px;padding:12px 14px;line-height:1.45;margin:12px 0 16px}.notice strong{color:#fff2c5}
+    .toolbar{display:grid;grid-template-columns:minmax(260px,1fr) repeat(5,minmax(120px,180px));gap:12px;align-items:end;margin:12px 0 16px}@media(max-width:1100px){.toolbar{grid-template-columns:1fr 1fr}}@media(max-width:680px){.toolbar{grid-template-columns:1fr}header{position:static}}
+    label{display:block;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.08em;margin:0 0 6px}input,select,button{width:100%;border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:12px;padding:12px 13px;font-size:15px;outline:none}input:focus,select:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(110,231,255,.14)}button{cursor:pointer;background:linear-gradient(180deg,#1f3f66,#132942);border-color:#31547f;font-weight:700}button:hover{border-color:var(--accent)}
+    .actions{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 16px}.actions button,.actions label.file-button{width:auto;min-width:160px;display:inline-flex;justify-content:center;align-items:center;gap:8px;border:1px solid #31547f;background:linear-gradient(180deg,#1f3f66,#132942);color:var(--text);border-radius:12px;padding:11px 13px;font-size:14px;font-weight:700;cursor:pointer;text-transform:none;letter-spacing:0;margin:0}.actions input[type=file]{display:none}
+    .status-grid{display:grid;grid-template-columns:repeat(5,minmax(120px,1fr));gap:12px;margin:16px 0}@media(max-width:900px){.status-grid{grid-template-columns:1fr 1fr}}.card{background:linear-gradient(180deg,rgba(20,35,58,.94),rgba(12,23,39,.94));border:1px solid var(--line);border-radius:16px;padding:14px;box-shadow:0 16px 42px var(--shadow)}.metric{font-size:26px;font-weight:800;letter-spacing:-.03em}.metric-label{color:var(--muted);font-size:13px;margin-top:4px}
+    .table-wrap{border:1px solid var(--line);border-radius:16px;overflow:auto;background:rgba(10,20,34,.78);box-shadow:0 16px 42px var(--shadow)}table{width:100%;min-width:1300px;border-collapse:collapse;font-size:14px}th,td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}th{position:sticky;top:0;background:#0f1c2f;color:#cfe3ff;z-index:3;user-select:none;cursor:pointer;white-space:nowrap}tr:hover td{background:rgba(110,231,255,.055)}.muted{color:var(--muted)}.chip{display:inline-flex;align-items:center;border:1px solid #335273;background:var(--chip);border-radius:999px;padding:3px 8px;font-size:12px;color:#cae4ff;margin:1px 3px 1px 0;white-space:nowrap}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}details{margin-top:16px;background:rgba(16,27,45,.72);border:1px solid var(--line);border-radius:14px;padding:12px 14px}summary{cursor:pointer;font-weight:800}pre{white-space:pre-wrap;background:#07101c;border:1px solid var(--line);border-radius:12px;padding:12px;overflow:auto}
+  </style>
+</head>
+<body>
+<header>
+  <h1>VA IaT Location Reference Catalog</h1>
+  <p class="subtitle">Static, no-key, public-source searchable catalog. Search by facility name, state, ZIP/postal code, facility ID, station/site code, VISN, type, classification, website, phone, coordinates, source fields, or any visible record value.</p>
+</header>
+<main>
+  <div class="notice"><strong>Boundary:</strong> public reference data only. This page is for catalog review, GitOps/IaT alignment, labels, dropdowns, and read-only lookup. It is not the source of authority for restricted or live operational data.</div>
+  <section class="toolbar">
+    <div><label for="searchBox">Search everything</label><input id="searchBox" type="search" placeholder="Example: Tampa 33612 VHA 673 clinic Florida VISN 8" autocomplete="off"></div>
+    <div><label for="stateFilter">State</label><select id="stateFilter"><option value="">All states</option></select></div>
+    <div><label for="typeFilter">Facility type</label><select id="typeFilter"><option value="">All types</option></select></div>
+    <div><label for="visnFilter">VISN</label><select id="visnFilter"><option value="">All VISNs</option></select></div>
+    <div><label for="confidenceFilter">Station code</label><select id="confidenceFilter"><option value="">All confidence</option></select></div>
+    <div><label for="limitFilter">Rows shown</label><select id="limitFilter"><option value="100">100</option><option value="250">250</option><option value="500">500</option><option value="1000">1000</option><option value="999999">All</option></select></div>
+  </section>
+  <section class="actions">
+    <button id="clearBtn" type="button">Clear filters</button><button id="exportCsvBtn" type="button">Export filtered CSV</button><button id="exportJsonBtn" type="button">Export filtered JSON</button><button id="copySummaryBtn" type="button">Copy summary</button><label class="file-button" for="fileInput">Load local JSON</label><input id="fileInput" type="file" accept=".json,application/json">
+  </section>
+  <section class="status-grid">
+    <div class="card"><div class="metric" id="totalMetric">0</div><div class="metric-label">Total records loaded</div></div>
+    <div class="card"><div class="metric" id="shownMetric">0</div><div class="metric-label">Matching current search</div></div>
+    <div class="card"><div class="metric" id="statesMetric">0</div><div class="metric-label">States / regions</div></div>
+    <div class="card"><div class="metric" id="typesMetric">0</div><div class="metric-label">Facility types</div></div>
+    <div class="card"><div class="metric" id="sourceMetric">—</div><div class="metric-label">Catalog version</div></div>
+  </section>
+  <p id="loadStatus" class="muted">Loading catalog from data/approved/va_locations.json ...</p>
+  <section class="table-wrap">
+    <table id="resultsTable"><thead><tr><th data-sort="name">Name</th><th data-sort="facility_id">Facility ID</th><th data-sort="station_code">Station / Site Code</th><th data-sort="facility_type">Type</th><th data-sort="classification">Classification</th><th data-sort="city">City</th><th data-sort="state">State</th><th data-sort="zip">ZIP</th><th data-sort="visn">VISN</th><th data-sort="phone">Phone</th><th data-sort="website">Website</th><th data-sort="lat">Coordinates</th><th data-sort="source_system">Source</th><th data-sort="approval_state">Approval</th></tr></thead><tbody></tbody></table>
+  </section>
+  <details><summary>How to run this locally or turn it on</summary><pre>Local test from repo root:
+
+cd %USERPROFILE%\Desktop\VA-IaT-LocationCatalog-Pilot\va-location-reference-catalog
+python -m http.server 8080
+
+Open:
+http://localhost:8080/
+
+Static hosting:
+- Serve from the repository root so index.html can load data/approved/va_locations.json.
+- Keep this repo private for the pilot unless governance approves otherwise.
+- If hosted from another folder, use the Load local JSON button or publish the approved JSON under the served folder.
+
+Search examples:
+- Tampa
+- Florida clinic
+- 33612
+- vha_673
+- VISN 8
+- cemetery Texas
+- regional office</pre></details>
+</main>
+<script>
+const state={records:[],enriched:[],filtered:[],sortKey:'name',sortDir:'asc',dataSource:'data/approved/va_locations.json'};const el=id=>document.getElementById(id);const tbody=document.querySelector('#resultsTable tbody');
+function asText(v){if(v===null||v===undefined)return'';if(Array.isArray(v))return v.map(asText).filter(Boolean).join(' | ');if(typeof v==='object')return Object.entries(v).map(([k,val])=>`${k}: ${asText(val)}`).filter(Boolean).join(' | ');return String(v)}
+function firstValue(obj,keys){if(!obj||typeof obj!=='object')return'';for(const key of keys){if(obj[key]!==undefined&&obj[key]!==null&&String(obj[key]).trim()!=='')return obj[key]}return''}
+function recursiveKeyValue(obj,wanted){const wantedLower=wanted.map(x=>x.toLowerCase());const stack=[obj];while(stack.length){const item=stack.pop();if(!item||typeof item!=='object')continue;for(const [key,value]of Object.entries(item)){if(wantedLower.includes(String(key).toLowerCase())&&value!==null&&value!==undefined&&String(value).trim()!=='')return value;if(typeof value==='object')stack.push(value)}}return''}
+function getAddress(record){const a=record.address||{};return typeof a==='object'&&a!==null?a:{}}
+function getCity(record){const a=getAddress(record);return asText(firstValue(a,['city','locality','town']))||asText(recursiveKeyValue(record,['city','locality','town']))}
+function getState(record){const a=getAddress(record);return asText(firstValue(a,['state','state_code','state_abbr','province','region']))||asText(recursiveKeyValue(record,['state','state_code','state_abbr','province','region']))}
+function getZip(record){const a=getAddress(record);return asText(firstValue(a,['zip','zipcode','zip_code','postal_code','postalCode']))||asText(recursiveKeyValue(record,['zip','zipcode','zip_code','postal_code','postalCode']))}
+function getPhone(record){return asText(record.phone||recursiveKeyValue(record,['phone','telephone','main_phone','mainPhone']))}
+function normalizeRecord(record){const city=getCity(record),st=getState(record),zip=getZip(record),phone=getPhone(record);return{raw:record,name:asText(record.name),facility_id:asText(record.facility_id),station_code:asText(record.station_code),facility_type:asText(record.facility_type),classification:asText(record.classification),city:city,state:st,zip:zip,visn:asText(record.visn),phone:phone,website:asText(record.website),lat:record.lat??'',long:record.long??'',source_system:asText(record.source_system),approval_state:asText(record.approval_state),catalog_version:asText(record.catalog_version),station_code_confidence:asText(record.station_code_confidence),search:asText(record).toLowerCase()}}
+async function loadCatalog(){const p=new URLSearchParams(location.search);const explicit=p.get('data');const candidates=explicit?[explicit]:['data/approved/va_locations.json','./data/approved/va_locations.json','../data/approved/va_locations.json','../../data/approved/va_locations.json'];let last=null;for(const path of candidates){try{const r=await fetch(path,{cache:'no-store'});if(!r.ok)throw new Error(`${r.status} ${r.statusText}`);acceptCatalog(await r.json(),path);return}catch(e){last=e}}el('loadStatus').innerHTML=`Could not auto-load JSON (${last?last.message:'unknown error'}). Use <strong>Load local JSON</strong> and select data/approved/va_locations.json, or serve the repo root with python -m http.server.`}
+function acceptCatalog(data,sourceName){if(!Array.isArray(data))throw new Error('Catalog JSON must be an array.');state.records=data;state.enriched=data.map(normalizeRecord);state.dataSource=sourceName;buildFilters();applyFilters();el('loadStatus').textContent=`Loaded ${data.length.toLocaleString()} records from ${sourceName}.`}
+function uniqueValues(key){return[...new Set(state.enriched.map(r=>asText(r[key]).trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}))}
+function populateSelect(id,values,label){const s=el(id);s.innerHTML=`<option value="">${label}</option>`;values.forEach(value=>{const opt=document.createElement('option');opt.value=value;opt.textContent=value;s.appendChild(opt)})}
+function buildFilters(){populateSelect('stateFilter',uniqueValues('state'),'All states');populateSelect('typeFilter',uniqueValues('facility_type'),'All types');populateSelect('visnFilter',uniqueValues('visn'),'All VISNs');populateSelect('confidenceFilter',uniqueValues('station_code_confidence'),'All confidence')}
+function tokenMatch(record,query){const tokens=query.toLowerCase().split(/\s+/).map(t=>t.trim()).filter(Boolean);return !tokens.length||tokens.every(t=>record.search.includes(t))}
+function applyFilters(){const q=el('searchBox').value,st=el('stateFilter').value,typ=el('typeFilter').value,visn=el('visnFilter').value,conf=el('confidenceFilter').value;state.filtered=state.enriched.filter(r=>tokenMatch(r,q)&&(!st||r.state===st)&&(!typ||r.facility_type===typ)&&(!visn||r.visn===visn)&&(!conf||r.station_code_confidence===conf));sortRows();render()}
+function sortRows(){const key=state.sortKey,dir=state.sortDir==='asc'?1:-1;state.filtered.sort((a,b)=>asText(a[key]).localeCompare(asText(b[key]),undefined,{numeric:true})*dir)}
+function html(v){return asText(v).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]))}
+function linkWebsite(url){const t=asText(url);if(!t)return'';const href=/^https?:\/\//i.test(t)?t:`https://${t}`;return`<a href="${html(href)}" target="_blank" rel="noopener noreferrer">Open</a>`}
+function mapLink(r){if(r.lat===''||r.long==='')return'';return`<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(r.lat+','+r.long)}" target="_blank" rel="noopener noreferrer">${html(r.lat)}, ${html(r.long)}</a>`}
+function render(){const limit=Number(el('limitFilter').value||100);const rows=state.filtered.slice(0,limit);tbody.innerHTML=rows.map(r=>`<tr><td><strong>${html(r.name)}</strong><br><span class="muted">${html(r.catalog_version)}</span></td><td><span class="chip">${html(r.facility_id)}</span></td><td>${r.station_code?`<span class="chip">${html(r.station_code)}</span>`:'<span class="muted">not available</span>'}<br><span class="muted">${html(r.station_code_confidence)}</span></td><td>${html(r.facility_type)}</td><td>${html(r.classification)}</td><td>${html(r.city)}</td><td>${html(r.state)}</td><td>${html(r.zip)}</td><td>${html(r.visn)}</td><td>${html(r.phone)}</td><td>${linkWebsite(r.website)}</td><td>${mapLink(r)}</td><td>${html(r.source_system)}</td><td><span class="chip">${html(r.approval_state)}</span></td></tr>`).join('');el('totalMetric').textContent=state.records.length.toLocaleString();el('shownMetric').textContent=state.filtered.length.toLocaleString();el('statesMetric').textContent=uniqueValues('state').length.toLocaleString();el('typesMetric').textContent=uniqueValues('facility_type').length.toLocaleString();el('sourceMetric').textContent=state.enriched[0]?.catalog_version||'—'}
+function clearFilters(){['searchBox','stateFilter','typeFilter','visnFilter','confidenceFilter'].forEach(id=>el(id).value='');applyFilters()}
+function toCsv(rows){const cols=['name','facility_id','station_code','facility_type','classification','city','state','zip','visn','phone','website','lat','long','source_system','approval_state','station_code_confidence','catalog_version'];const esc=v=>`"${asText(v).replace(/"/g,'""')}"`;return[cols.join(','),...rows.map(r=>cols.map(c=>esc(r[c])).join(','))].join('\n')}
+function download(name,mime,content){const blob=new Blob([content],{type:mime});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url)}
+function copySummary(){const summary=['VA IaT Location Reference Catalog',`Data source: ${state.dataSource}`,`Total records: ${state.records.length}`,`Current matches: ${state.filtered.length}`,`Search: ${el('searchBox').value||'(none)'}`,`State filter: ${el('stateFilter').value||'(all)'}`,`Type filter: ${el('typeFilter').value||'(all)'}`,`VISN filter: ${el('visnFilter').value||'(all)'}`,`Station confidence filter: ${el('confidenceFilter').value||'(all)'}`].join('\n');navigator.clipboard?.writeText(summary);el('loadStatus').textContent='Summary copied to clipboard.'}
+document.querySelectorAll('th[data-sort]').forEach(th=>th.addEventListener('click',()=>{const key=th.dataset.sort;if(state.sortKey===key)state.sortDir=state.sortDir==='asc'?'desc':'asc';else{state.sortKey=key;state.sortDir='asc'}applyFilters()}));['searchBox','stateFilter','typeFilter','visnFilter','confidenceFilter','limitFilter'].forEach(id=>{el(id).addEventListener('input',applyFilters);el(id).addEventListener('change',applyFilters)});el('clearBtn').addEventListener('click',clearFilters);el('exportCsvBtn').addEventListener('click',()=>download('va-location-catalog-filtered.csv','text/csv;charset=utf-8',toCsv(state.filtered)));el('exportJsonBtn').addEventListener('click',()=>download('va-location-catalog-filtered.json','application/json;charset=utf-8',JSON.stringify(state.filtered.map(r=>r.raw),null,2)));el('copySummaryBtn').addEventListener('click',copySummary);el('fileInput').addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;acceptCatalog(JSON.parse(await f.text()),f.name)});loadCatalog();
+</script>
+</body>
+</html>

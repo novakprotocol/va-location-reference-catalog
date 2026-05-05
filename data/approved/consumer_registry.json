@@ -1,0 +1,26 @@
+{
+  "consumers": [
+    {
+      "allowed_fields": [
+        "facility_id",
+        "station_code",
+        "station_code_confidence",
+        "name",
+        "facility_type",
+        "visn",
+        "source_snapshot_utc",
+        "catalog_version"
+      ],
+      "allowed_outputs": [
+        "data/approved/va_locations.json"
+      ],
+      "approval_reference": "private-pilot-only",
+      "consumer_name": "pilot-grafana-labels",
+      "consumer_type": "display_only",
+      "last_reviewed": "2026-05-05",
+      "owner": "pilot-owner",
+      "write_back_allowed": false
+    }
+  ],
+  "schema_version": "1.0.0"
+}

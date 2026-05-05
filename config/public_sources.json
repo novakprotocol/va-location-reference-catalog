@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "Public-only, no-key source candidates for VA IaT Location Reference Catalog population.",
+  "sources": [
+    {
+      "source_id": "discoverva_va_locator_facility_list",
+      "name": "DiscoverVA VA Locator Facility List",
+      "url": "https://discover.va.gov/va-locator-facility-list/",
+      "access_model": "public_no_key",
+      "preferred_for_day0": true,
+      "expected_content": "Raw facility list table with facility ID, name, city, state, latitude, longitude, classification, VISN, facility type, and website.",
+      "importer_support": "direct_download_html_table_or_local_saved_html"
+    },
+    {
+      "source_id": "va_directory_home",
+      "name": "VA.gov Directory / Locations Home",
+      "url": "https://www.va.gov/directory/",
+      "access_model": "public_no_key",
+      "preferred_for_day0": false,
+      "expected_content": "Directory metadata and facility count/status page. Useful as corroborating source, not primary bulk table.",
+      "importer_support": "source_evidence_only"
+    },
+    {
+      "source_id": "data_gov_facilities_leadership",
+      "name": "Data.gov Facilities & Leadership dataset metadata",
+      "url": "https://catalog.data.gov/dataset/facilities-leadership",
+      "access_model": "public_metadata_no_key_service_requires_license",
+      "preferred_for_day0": false,
+      "expected_content": "Dataset metadata for VA facilities web service. Useful as provenance reference; service call may require a VA license key.",
+      "importer_support": "source_evidence_only"
+    },
+    {
+      "source_id": "data_gov_va_facilities_api",
+      "name": "Data.gov VA Facilities API metadata",
+      "url": "https://catalog.data.gov/dataset/va-facilities-api",
+      "access_model": "public_metadata_api_token_required_for_live_api",
+      "preferred_for_day0": false,
+      "expected_content": "Dataset metadata pointing to VA Lighthouse Facilities API. API key/token path is optional future lane only.",
+      "importer_support": "source_evidence_only"
+    }
+  ]
+}

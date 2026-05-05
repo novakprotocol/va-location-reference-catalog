@@ -1,0 +1,684 @@
+
+
+<!DOCTYPE html>
+
+
+<html>
+
+<head><title>
+	SD Department of Veterans Affairs - Veterans Cemetery
+</title><link href="/inc/styles/screen.css" rel="stylesheet" type="text/css" /><link rel="icon" type="image/png" href="/img/favicon.png" />    
+
+   <!--<link type="text/css" rel="Stylesheet" href="/inc/styles/screen.css" />-->
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+
+
+ 
+ <script src="/inc/scripts/modernizr.js"></script>
+  <script src="/inc/scripts/SpryAccordion.js" type="text/javascript"></script>
+<script src="/inc/scripts/SpryCollapsiblePanel.js" type="text/javascript"></script>
+
+ 
+  
+  
+
+
+
+<script src="https://cdn.sd.gov/lib/jquery/jquery.min.js"></script>
+
+<link href="/inc/scripts/lightbox-2.11.3/css/lightbox.min.css" rel="stylesheet" />
+<script src="/inc/scripts/lightbox-2.11.3/js/lightbox.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('li').hover(
+    function () {
+        var timer = $(this).data('timer');
+        if (timer) clearTimeout(timer);
+        var li = $(this);
+        li.data('showTimer', setTimeout(function () { li.addClass('over'); }, 5000));
+    },
+
+    function () {
+        var showTimer = $(this).data('showTimer');
+        if (showTimer) clearTimeout(showTimer);
+        var li = $(this);
+        li.data('timer', setTimeout(function () { li.removeClass('over'); }, 5000));
+    });
+    });
+</script>
+
+<!--[if IE 7]>
+	<style>
+  		ul.dropdown {
+        margin-left:-20px;
+        } 
+    </style>
+<![endif]-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1" /><link href="/inc/styles/screen.css" rel="stylesheet" type="text/css" /><link href="/inc/styles/mobile.css" rel="stylesheet" type="text/css" /><link href="/inc/styles/font-awesome.min.css" rel="stylesheet" type="text/css" />
+       
+
+
+
+<script>
+    jQuery(document).ready(function () {
+        //back to top link
+        var offset = 220;
+        var duration = 500;
+        jQuery(window).scroll(function() {
+            if (jQuery(this).scrollTop() > offset) {
+                jQuery('.back-to-top').fadeIn(duration);
+            } else {
+                jQuery('.back-to-top').fadeOut(duration);
+            }
+        });
+    
+        jQuery('.back-to-top').click(function(event) {
+            event.preventDefault();
+            jQuery('html, body').animate({scrollTop: 0}, duration);
+            return false;
+        })
+
+
+
+        //if window is wider than 800px, switch from mobile to full menu
+        if ($(window).width() > 775) {
+            //main nav drop downs handled in css
+        }
+        else {
+            //mobile menu open/close
+            $("#mobMenu").on("touchstart", function (e) {
+                $("#mobNav").slideToggle();
+                e.preventDefault();
+            });
+
+            //show subnavs on click for mobile - hover for large screens handled in CSS
+            $("li.wSub a").on("touchstart", function (e) {
+                $(this).siblings("ul").slideToggle();
+                e.preventDefault();
+            
+            });
+
+            //show secondary subnavs on click for mobile - hover for large screens handled in CSS
+            //$("li.wSecSub a").on("click touchstart", function (e) {
+            //    $(this).siblings("ul").slideToggle();
+            //    e.preventDefault();
+            
+            //});
+
+        };
+    });
+
+</script>
+
+
+<script>
+    function validateLogin() {
+
+	var form = document.f_login;
+	
+	if(form.username.value=="") {
+		alert("Enter username");
+		return false;
+	}
+	else {
+		if(form.password.value=="") {
+			alert("Enter password");
+			return false;
+		}			
+	}
+
+	return true;
+
+}
+
+function validateUsers() {
+
+	var form = document.f_users;
+	if(form.username.value=="") {
+		alert("Username should not be blank");
+		return false;
+	}
+	else {
+		if((form.password.value).length<6) {
+			alert("Password should not be blank and minimum 6 characters");
+			return false;
+		}
+		else
+			if(form.NavID.selectedIndex==-1) {
+				alert("Select at least one Navigation");
+				return false;
+		    }
+			else
+				return true;
+	}
+
+}
+
+function validateAdminNav() {
+
+	var form = document.f_adminnav;
+	var order;
+	if(form.title.value=="") {
+		alert("Enter a Navigation Title");
+		return false;
+	}	
+
+	form.title.value=(form.title.value).replace("'","''");
+
+	return true;
+
+}
+
+function validateNav() {
+
+	var form = document.f_nav;
+	var order;
+	if(form.title.value=="") {
+		alert("Enter a Navigation Title");
+		return false;
+	}
+	else {
+		if(form.displayOrder.value=="") 
+			form.displayOrder.value="0";
+		else  { 
+			order = form.displayOrder.value;
+			if(isNaN(order)) {
+				alert("Display Order should be numeric");
+				return false;
+			}
+		}	
+			
+	}
+
+	document.getElementById('editor1').EscapeUnicode = true;
+	form.content.value = document.getElementById('editor1').value;
+	
+	return true;
+
+}
+
+function validateChangePassword() {
+
+	var form = document.f_changepassword;
+	
+	if(form.old.value=="") {
+		alert("Enter the old password");
+		return false;
+	}
+	else {
+		if((form.new1.value).length<6) {
+			alert("The new password you entered is not valid");
+			return false;
+		}
+		else {
+			if(form.new1.value!=form.new2.value) {				
+				alert("Passwords don't match");
+				return false;
+			}
+		}		
+	}
+
+	return true;
+
+}
+
+function validatefaq() {
+
+	var form = document.f_faq;	
+	
+	if(form.question.value=="") {
+		alert("Enter the question");
+		return false;
+	}
+	else {
+		if(form.sno.value=="") 
+			form.sno.value="0";
+		else  { 
+			order = form.sno.value;
+			if(isNaN(order)) {
+				alert("Serial Number should be a number");
+				return false;
+			}
+		}		
+	}	
+
+	return true;
+
+}
+
+function validateEvent() {
+
+	var form = document.f_event;
+	if(form.desc.value=="") {
+		alert("Enter Event Description");
+		return false;
+	}
+	else {
+		if(form.fromDate.value=="") {
+			alert("From Date should not be blank");
+			return false;
+		}		
+		else {
+			if(form.city.value=="") {
+				alert("Enter City");
+				return false;
+			}		
+			else {
+				if(form.loc.value=="") {
+					alert("Enter Location");
+					return false;
+				}	
+				else {
+					if(form.mm.value=="0" || form.dd.value=="0" || form.yyyy.value=="0") {		
+						alert("Enter Expiration Date");
+						return false;			
+					}		
+					else {
+						if(form.toDate.value=="") 		
+							form.toDate.value=form.fromDate.value;					
+					}						
+				}
+			}
+		}
+	}
+
+	return true;
+
+}
+
+function validateRecipient() {
+
+	var form = document.f_recipient;
+	var order;
+	if(form.name.value=="") {
+		alert("Enter Recipient Name");
+		return false;
+	}	
+
+	document.getElementById('editor1').EscapeUnicode = true;
+	form.content.value = document.getElementById('editor1').value;
+	
+	return true;
+
+}
+
+function validateContactInfo() {
+
+	var form = document.f_contact;
+	
+	if(form.FirstName.value=="" || form.LastName.value=="" || form.City.value=="" || form.Email.value=="") {
+		alert("Please fill out the required fields marked with an asterisk (*)");
+		return false;
+	}
+	
+	return true;
+
+}
+
+
+
+
+</script>
+
+<meta HTTP-EQUIV="Pragma" content="no-cache" /><meta HTTP-EQUIV="Cache-Control" content="no-cache,no-Store" />
+
+<SCRIPT language="JAVASCRIPT">
+<!--
+    if (top.frames.length != 0)
+        top.location = self.document.location;
+// -->
+</SCRIPT>
+
+
+
+<script>
+    //on hover make sub nav items open
+
+
+
+
+
+
+
+
+    //set the width of the side navigation to 250
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+</script>
+</head>
+
+
+
+
+
+
+<body>
+    <form method="post" action="./contact.aspx" id="ctl01">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTExMzUyNzY4MmRkjz26AkIBPd6WyZcY7H21Gr2gwVLGUEXbIKrrZcWoNeU=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BCD67C95" />
+        <div id="content">
+
+            	<!--<div data-role="page">
+<div data-role="panel" class="hide" id="mypanel" data-display="overlay">
+
+    <h3><a href="/aboutsddva/default.aspx">About SDDVA</a></h3>
+    <h3><a href="/benefits/default.aspx">Benefits</a></h3>
+    <h3><a href="/publicaffairs/default.aspx">Public Affairs</a></h3>
+    <h3><a href="/veteranshome/default.aspx">Veterans Home</a></h3>
+    <h3><a href="/veteransserviceofficers/default.aspx">Veterans Service Officers</a></h3>
+    <h3><a href="/resources/default.aspx">Resources</a></h3>
+    <h3><a href="/default.aspx">Home</a></h3>
+    
+
+</div><!-- /panel -->
+
+
+
+
+<div id="header">
+    
+    <div id="searchCont">
+        <script>
+          (function() {
+            var cx = '012382400048732927914:twkiekncmco';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+          window.onload = function () {
+              document.getElementById('gsc-i-id1').placeholder = '';
+          };
+        </script>
+        <gcse:search></gcse:search>
+    </div>
+    
+    <a href="/default.aspx"><div id="logo"><img src="/img/logo.png" alt="logo" /></div></a>
+    <div id="headMenu">
+        <a href="/default.aspx"><div id="homebutton" class="mobilenoshow">Home</div></a>
+        <a href="https://www.sdcommunityfoundation.org/make-donation?fund=Michael%20J.%20Fitzmaurice%20State%20Veterans%20Home%20Endowment%20Fund/" target="_blank"><div id="homebutton" class="mobilenoshow" style="background: #262263;">Contribute to<br />MJFSV Home Foundation</div></a>
+        <a href="https://www.sdcommunityfoundation.org/make-donation?fund=South%20Dakota%20State%20Veterans%20Cemetery%20Fund" target="_blank"><div id="homebutton" class="mobilenoshow" style="background: #262263;">Contribute to<br />SD Veterans Cemetery Fund</div></a>
+    </div>
+
+    </div>
+
+   <div id="toggle-bar">
+
+    </div> <div id="mainMenu">
+    <div id="mobMenu">MENU</div>
+    <ul id="mobNav">
+        <li class="wSub"><a href="/aboutsddva/default.aspx">About</a>
+                <ul class="subNav">
+    <li><a href="/aboutsddva/VisionMission.aspx">Vision</a></li>
+    <li><a href="/aboutsddva/secretariesmessage.aspx">Department Message</a></li>
+    <li><a href="/aboutsddva/History.aspx">History</a></li>
+    <li><a href="/aboutsddva/contactus.aspx">Contact Us</a></li>
+    <li><a href="/aboutsddva/veterans commission.aspx">Veterans Commission</a></li>
+</ul>
+
+           </li><!--
+        --><li class="wSub"><a href="/benefits/default.aspx">Benefits</a>
+                <ul class="subNav">
+                    <li class="wSecSub"><a href="/benefits/State/intro to state benefits.aspx">State</a>
+                        <ul class="secsubNav">
+    <li><a href="/benefits/State/intro to state benefits.aspx">Introduction</a></li>
+    <li><a href="/benefits/State/Veterans Bonus.aspx">Bonus</a></li>
+    <li><a href="/benefits/State/Burial Benefits.aspx">Burial Benefits</a></li>
+    <li><a href="/benefits/State/education.aspx">Education</a></li>
+    <li><a href="/benefits/State/Headstone Setting Fee.aspx">Headstone Setting Reimbursement</a></li>
+    <li><a href="/benefits/State/Hunting and Fishing Licenses.aspx">Hunting/Fishing Licenses</a></li>
+    <li><a href="/benefits/State/special License plates.aspx">License Plates</a></li>
+    <li><a href="/benefits/State/Drivers License Veterans Designation.aspx">Drivers License Veterans Designation</a></li>
+    <li><a href="/benefits/State/State Parks.aspx">State Parks</a></li>
+    <li><a href="/benefits/State/Veterans Records.aspx">DD214/Discharge Records</a></li>
+    <li><a href="/benefits/State/Veterans Preference.aspx">Veterans Preference</a></li>
+</ul>
+
+                    </li>
+                    <li class="wSecSub"><a href="/benefits/Federal/intro to federal benefits.aspx">Federal</a>
+                        <ul class="secsubNav">
+    <li><a href="/benefits/Federal/intro to federal benefits.aspx">Introduction</a></li>
+    <li><a href="/benefits/Federal/Burial.aspx">Burial</a></li>
+    <li><a href="/benefits/Federal/Compensation.aspx">Compensation</a></li>
+    <li><a href="/benefits/Federal/DIC.aspx">DIC</a></li>
+    <li><a href="/benefits/Federal/Education.aspx">Education</a></li>
+    <li><a href="/benefits/Federal/Healthcare.aspx">Health Care</a></li>
+    <li><a href="/benefits/Federal/HOme Loan Guaranty.aspx">Home Loan</a></li>
+    <li><a href="/benefits/Federal/Pension.aspx">Pension</a></li>
+    <li><a href="/benefits/Federal/Insurance.aspx">Insurance</a></li>
+    <li><a href="/benefits/Federal/Voc Rehab.aspx">Vocational Rehab/Employment</a></li>
+</ul>
+
+                    </li>
+                </ul>
+           </li><!--
+        --><li class="wSub"><a href="/publicaffairs/default.aspx">Public Affairs</a>
+                <ul class="subNav">
+    
+<li><a href="/publicaffairs/upcomingevents.aspx">Upcoming Events</a></li>
+    
+<li><a href="/publicaffairs/Columns.aspx">Columns</a></li>
+    
+<li><a href="/publicaffairs/Press Releases.aspx">Press Releases</a></li>
+   
+<li><a href="/publicaffairs/Other Publicationss.aspx">Other Publications</a></li>
+
+</ul>
+
+           </li><!--
+        --><li class="wSub"><a href="/veteranscemetery/default.aspx">Veterans Cemetery</a>
+                <ul class="subNav">
+    <li class="wSecSub">Eligibility</a>
+        <ul class="secsubNav">
+            <li><a href="/veteranscemetery/eligibilityVeteran.aspx">Veteran</a></li>
+            <li><a href="/veteranscemetery/eligibilityDependents.aspx">Dependents</a></li>
+        </ul>
+    </li>
+    <li><a href="/veteranscemetery/preregister.aspx">Determination of Eligibility</a></li>
+    <li><a href="/veteranscemetery/photos.aspx">Cemetery Photos</a></li>
+    <li><a href="/veteranscemetery/contact.aspx">Contact Us</a></li>
+</ul>
+
+           </li><!--
+        --><li class="wSub"><a href="/veteranshome/default.aspx">Veterans Home</a>
+                <ul class="subNav">
+    <li><a href="/veteranshome/History.aspx">History and Foundation</a></li>
+    <li><a href="/veteranshome/Mission.aspx">Mission/ Vision/ Values/ Goals</a></li>
+    <li><a href="/veteranshome/Features.aspx">Features</a></li>
+    <li><a href="/veteranshome/Application Process.aspx">Application Process</a></li>
+    <li><a href="/veteranshome/Activities.aspx">Activities</a></li>
+    <li><a href="/veteranshome/staff.aspx">Staff</a></li>
+    </ul>
+
+           </li><!--
+        --><li class="wSub"><a href="/veteransserviceofficers/what is a vso.aspx">Veterans Service Officers</a>
+                <ul class="subNav">
+    <li><a href="/veteransserviceofficers/what is a vso.aspx">What is a VSO?</a></li>
+    <li><a href="/veteransserviceofficers/locatevso.aspx">Locating a VSO</a></li>
+    <li><a href="/veteransserviceofficers/password.aspx">VSO Portal</a></li>
+</ul>
+
+           </li><!--
+        --><li class="wSub"><a href="/resources/Fallen%20Hero%20Bridge%20Dedications/Bridge%20Heroes.aspx">Bridge Dedications</a>
+           </li><!--
+        --><li class="wSub"><a href="/resources/default.aspx">Resources</a>
+                <ul class="subNav">
+    <li><a href="/resources/sdmemorials.aspx">SD Memorials</a></li>
+    <li><a href="/resources/FilingDD214.aspx">Filing your DD214</a></li>
+    <li><a href="/resources/Veterans Service Organizations.aspx">Veterans Service Organizations</a></li>
+    <li><a href="/resources/congressionaldelegation.aspx">Congressional Delegation</a></li>
+    <li class="wSecSub"><a href="/resources/DAV Program.aspx">Transportation</a>
+        <ul class="secsubNav rtCol">
+            <li><a href="/resources/DAV Program.aspx">DAV Program</a></li>
+            <li><a href="/resources/Transportation.pdf">Transportation Resources for Veterans</a></li>
+            <li><a href="/resources/Free Highly Rural Transportation.aspx">Free Highly Rural Transportation Program</a></li>
+        </ul>
+    </li>
+    <li><a href="/docs/SD%20Homeless%20Housing%20Resources%20by%20Regions%20and%20Project.pdf">Homeless Shelters</a></li>
+    <li><a href="/resources/Maps.aspx">Maps</a></li>
+    <li><a href="/resources/colleges.aspx">Colleges and Universities</a></li>
+    <li><a href="/resources/additionallinks.aspx">Additional Links</a></li>
+</ul>
+
+           </li><!--
+        --><li class="wSub"><a href="/Careers/Careers.aspx">Careers</a>
+           </li>
+
+
+
+
+            <div id="mainContent">
+                <div id="secondaryMenu">
+                    <h2>Veterans Cemetery</h2>
+                    <ul class="subNav">
+    <li class="wSecSub">Eligibility</a>
+        <ul class="secsubNav">
+            <li><a href="/veteranscemetery/eligibilityVeteran.aspx">Veteran</a></li>
+            <li><a href="/veteranscemetery/eligibilityDependents.aspx">Dependents</a></li>
+        </ul>
+    </li>
+    <li><a href="/veteranscemetery/preregister.aspx">Determination of Eligibility</a></li>
+    <li><a href="/veteranscemetery/photos.aspx">Cemetery Photos</a></li>
+    <li><a href="/veteranscemetery/contact.aspx">Contact Us</a></li>
+</ul>
+
+                </div>
+                <div id="newContent">
+                    <h1>Contact Us</h1>
+                    <p>The South Dakota Veteran's Cemetery is operated and maintained by the  South Dakota Department of Veterans Affairs.<br>
+                    <br>
+                    Contact us for information about the South Dakota Veterans Cemetery, eligibility, interment options, and scheduling.<br>
+                    
+			</p>Phone:<br> 
+			(605) 277-8094<br>
+			
+			<p>Email:<br>
+			sdvc@state.sd.us<br>
+					
+            <p>Address:<br>
+            25965 477th Avenue<br>
+            Sioux Falls, SD 57104<br>
+            
+            </div>
+
+
+            </div>
+            <!-- main content close-->
+
+
+            
+	
+	
+
+	
+
+</div>
+
+<html lang="en-US">
+	
+
+
+
+	
+
+
+<div id="footer">
+    <div class="footercolumn">
+    
+    <a href="http://sd.gov" title="State Homepage" target="_blank">State Homepage</a><br>
+		
+	<a href="https://www.veteranscrisisline.net/" target="_Veterans Crisis Line" rel="noreferrer noopener" title="Veterans Crisis Line" >Veterans Crisis Line</a><br />
+
+    <a href="https://sdbehavioralhealth.gov/mental-health?gad_source=1&gclid=EAIaIQobChMI1uvf366fhgMVcTbUAR30bg0FEAAYASAAEgLDevD_BwE" target="_Behavioral Health" rel="noreferrer noopener" title="SD Behavioral Health" >SD Behavioral Health</a><br />
+
+    <a href="https://sdsuicideprevention.org/" target="_Suicide Prevention" rel="noreferrer noopener" title="SD Suicide Prevention" >SD Suicide Prevention</a><br />
+      
+    <a href="/inc/sitemap.aspx" title="Site Map" >Site Map</a><br />
+
+    
+    
+    </div> <!-- footerleft close-->
+    
+    
+    <div class="footercolumn">
+    
+    &copy; Copyright 2026<br>State of South Dakota <br/><br>
+  
+	<a href="https://www.sd.gov/cs?id=sc_cat_item&sys_id=f7f939eddbd4b150b2fb93d4f39619c0" target="_Request Public Records" rel="noreferrer noopener">Request Public Records</a><br />
+		
+    <a href="http://sd.gov/accpolicy.aspx" title="Accessibility" target="_Accessibility">Accessibility</a><br>
+        
+    <a href="http://sd.gov/privacy.aspx" title="Privacy" target="_Privacy">Privacy</a><br>
+      
+    <a href="http://sd.gov/disclaim.aspx" title="Disclaimer" target="_Disclaimer">Disclaimer</a>
+    
+    </div> 
+    
+    <div class="footercolumn"> 
+
+    
+    
+    
+	<div class="footerbanners"><a href="/claims/What do we Do.aspx">Claims</a></div>
+    
+	<div class="footerbanners">
+	
+	<div class="social"> 
+	<a href="https://www.facebook.com/SDDVA/" target="_Facebook">Facebook</a><br>
+	<a href="https://www.instagram.com/sd.dva/" target="_Instagram">Instagram</a>
+	
+	</div>
+	</div>
+	<div class="footerbanners"><a href="/aboutsddva/contactus.aspx">Contact Us</a></div>
+
+    
+    </div><!-- footerbanners close-->
+    
+      
+    
+    
+    
+    
+</div> <!-- footer close-->
+
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#toggle-bar").click(function () {
+            $("#topnav").toggle();
+        });
+    });
+	$(document).ready(function () {
+	    $("#topnav ul li").click(function () {
+	        $(".dropdown2").toggle();
+            
+        });
+    });
+</script>
+
+
+
+            <a href="#" class="back-to-top">Back to Top</a>
+
+        </div>
+        <!-- content close-->
+    </form>
+</body>
+</html>

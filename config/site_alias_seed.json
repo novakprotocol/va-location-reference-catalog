@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "Seed file for human-reviewed local mnemonic site aliases. These are not the same as official VA station codes unless independently verified.",
+  "governance_note": "Treat aliases as display/search helpers until reviewed and approved. Keep source_reference and confidence explicit.",
+  "matching_note": "Use exact public facility_id when known. Public VA display names may not contain the local mnemonic wording, so do not require name_contains for seeded high-confidence local mappings unless needed to disambiguate.",
+  "aliases": [
+    {
+      "alias": "TAM",
+      "meaning": "Tampa",
+      "match": {
+        "facility_id": "vha_673",
+        "station_code": "673"
+      },
+      "alias_type": "local_mnemonic",
+      "confidence": "user_supplied_needs_public_verification",
+      "source_reference": "user_observed",
+      "review_state": "review_pending"
+    },
+    {
+      "alias": "BAY",
+      "meaning": "Bay Pines",
+      "match": {
+        "facility_id": "vha_516",
+        "station_code": "516"
+      },
+      "alias_type": "local_mnemonic",
+      "confidence": "user_supplied_needs_public_verification",
+      "source_reference": "user_observed",
+      "review_state": "review_pending"
+    }
+  ]
+}

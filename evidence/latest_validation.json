@@ -1,0 +1,10 @@
+{
+  "denied_marker_finding_count": 0,
+  "duplicate_count": 0,
+  "error_count": 0,
+  "errors": [],
+  "record_count": 2137,
+  "result": "PASS",
+  "secret_finding_count": 0,
+  "validated_utc": "2026-05-05T16:37:51.886450+00:00"
+}
