@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
   Populate the VA IaT Location Reference Catalog locally and open a GitHub PR.
 
@@ -55,7 +55,7 @@ function Invoke-NativeChecked {
     & $Command @Arguments
     $ExitCode = $LASTEXITCODE
     if ($ExitCode -ne 0) {
-        Fail "Command failed with exit code $ExitCode: $Command $($Arguments -join ' ')"
+        Fail "Command failed with exit code ${ExitCode}: $Command $($Arguments -join ' ')"
     }
 }
 
@@ -194,3 +194,4 @@ finally {
         Clear-ApiKey
     }
 }
+
