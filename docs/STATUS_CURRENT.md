@@ -1,7 +1,7 @@
-# Current Status — VA IaT Location Reference Catalog
+# Current Status — Public VA Facility Location Catalog
 
 ```text
-PROJECT=VA IaT Location Reference Catalog
+PROJECT=Public VA Facility Location Catalog
 REPO=novakprotocol/va-location-reference-catalog
 VISIBILITY=private
 DEFAULT_BRANCH=main

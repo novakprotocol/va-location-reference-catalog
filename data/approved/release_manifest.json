@@ -1,9 +1,9 @@
 {
   "catalog_name": "VA IaT Location Reference Catalog",
   "catalog_version": "2026.05.05.1",
-  "created_utc": "2026-05-05T16:37:52.020475+00:00",
-  "git_branch": "work/no-key-public-source-data-candidate-v1",
-  "git_commit": "460928be3ca3bed22a8250d43e085d5a7ed0e7ba",
+  "created_utc": "2026-05-05T18:48:32.998854+00:00",
+  "git_branch": "work/promote-github-reviewed-diff-20260505-144829",
+  "git_commit": "8ec81a25065fecd771addd87efee8971f641464f",
   "record_count": 2137,
   "release_channel": "candidate",
   "schema_version": "1.0.0",
