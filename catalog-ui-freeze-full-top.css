@@ -1,0 +1,102 @@
+/*
+  VA Location Catalog public UI full-top freeze layer.
+
+  Intent:
+  - Keep the Veterans Crisis Line banner fixed at the viewport top.
+  - Keep the entire public page chrome above the table visible.
+  - Move row scrolling into the table panel instead of the whole browser page.
+  - Keep real table column headers sticky inside that table panel.
+  - Avoid cloned headers so column widths stay aligned with row cells.
+*/
+
+html.catalog-freeze-full-top,
+html.catalog-freeze-full-top body {
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden !important;
+}
+
+html.catalog-freeze-full-top body {
+  padding-top: var(--catalog-vcl-banner-height, 0px) !important;
+}
+
+.catalog-vcl-fixed-top {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 2147483000 !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  transform: translateZ(0);
+}
+
+.catalog-table-scrollpane-lock {
+  overflow: auto !important;
+  position: relative !important;
+  height: calc(100vh - var(--catalog-table-scrollpane-top, 0px) - 12px) !important;
+  max-height: calc(100vh - var(--catalog-table-scrollpane-top, 0px) - 12px) !important;
+  min-height: 220px !important;
+  overscroll-behavior: contain !important;
+  border-radius: 12px;
+}
+
+.catalog-table-scrollpane-lock table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+}
+
+.catalog-table-scrollpane-lock thead,
+.catalog-table-scrollpane-lock thead tr,
+.catalog-table-scrollpane-lock thead th {
+  background: #0b1626 !important;
+  color: #eaf2ff !important;
+}
+
+.catalog-table-scrollpane-lock thead th,
+.catalog-table-scrollpane-lock th {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  box-shadow: 0 2px 0 rgba(148, 163, 184, 0.28), 0 10px 18px rgba(0, 0, 0, 0.35) !important;
+  vertical-align: bottom !important;
+  white-space: nowrap !important;
+  background-clip: padding-box !important;
+}
+
+.catalog-table-scrollpane-lock thead th::after,
+.catalog-table-scrollpane-lock th::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 1px;
+  background: rgba(148, 163, 184, 0.45);
+  pointer-events: none;
+}
+
+.catalog-table-scrollpane-lock tbody td,
+.catalog-table-scrollpane-lock tbody th {
+  position: static;
+}
+
+/* Keep horizontal scroll useful and prevent the first visible rows from bleeding through headers. */
+.catalog-table-scrollpane-lock tbody tr:first-child td,
+.catalog-table-scrollpane-lock tbody tr:first-child th {
+  border-top: 0 !important;
+}
+
+/* When pages have a custom nav/header above the table, it remains locked because only this pane scrolls. */
+.catalog-freeze-debug-badge {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 2147482500;
+  font: 11px/1.2 system-ui, -apple-system, Segoe UI, sans-serif;
+  background: rgba(15, 23, 42, 0.88);
+  color: #dbeafe;
+  padding: 6px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(147, 197, 253, 0.35);
+}
