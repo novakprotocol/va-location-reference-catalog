@@ -17,6 +17,7 @@
     .table-wrap{border:1px solid var(--line);border-radius:16px;overflow:auto;background:rgba(10,20,34,.78);box-shadow:0 16px 42px var(--shadow)}table{width:100%;min-width:1300px;border-collapse:collapse;font-size:14px}th,td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}th{position:sticky;top:0;background:#0f1c2f;color:#cfe3ff;z-index:3;user-select:none;cursor:pointer;white-space:nowrap}tr:hover td{background:rgba(110,231,255,.055)}.muted{color:var(--muted)}.chip{display:inline-flex;align-items:center;border:1px solid #335273;background:var(--chip);border-radius:999px;padding:3px 8px;font-size:12px;color:#cae4ff;margin:1px 3px 1px 0;white-space:nowrap}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}details{margin-top:16px;background:rgba(16,27,45,.72);border:1px solid var(--line);border-radius:14px;padding:12px 14px}summary{cursor:pointer;font-weight:800}pre{white-space:pre-wrap;background:#07101c;border:1px solid var(--line);border-radius:12px;padding:12px;overflow:auto}
   </style>
   <link rel="stylesheet" href="catalog-ui-public-fixes.css">
+  <link rel="stylesheet" href="catalog-ui-freeze-full-top.css">
 </head>
 <body>
 <!-- PUBLIC_CRISIS_LINE_BANNER_LOCKED_V1_START -->
@@ -126,7 +127,7 @@
     <div class="card"><div class="metric" id="shownMetric">0</div><div class="metric-label">Matching current search</div></div>
     <div class="card"><div class="metric" id="statesMetric">0</div><div class="metric-label">States / regions</div></div>
     <div class="card"><div class="metric" id="typesMetric">0</div><div class="metric-label">Facility types</div></div>
-    <div class="card"><div class="metric" id="sourceMetric">â€”</div><div class="metric-label">Catalog version</div></div>
+    <div class="card"><div class="metric" id="sourceMetric">Ã¢â‚¬â€</div><div class="metric-label">Catalog version</div></div>
   </section>
   <p id="loadStatus" class="muted">Loading catalog from data/approved/va_locations.json ...</p>
   <section class="table-wrap">
@@ -176,7 +177,7 @@ function sortRows(){const key=state.sortKey,dir=state.sortDir==='asc'?1:-1;state
 function html(v){return asText(v).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]))}
 function linkWebsite(url){const t=asText(url);if(!t)return'';const href=/^https?:\/\//i.test(t)?t:`https://${t}`;return`<a href="${html(href)}" target="_blank" rel="noopener noreferrer">Open</a>`}
 function mapLink(r){if(r.lat===''||r.long==='')return'';return`<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(r.lat+','+r.long)}" target="_blank" rel="noopener noreferrer">${html(r.lat)}, ${html(r.long)}</a>`}
-function render(){const limit=Number(el('limitFilter').value||100);const rows=state.filtered.slice(0,limit);tbody.innerHTML=rows.map(r=>`<tr><td><strong>${html(r.name)}</strong><br><span class="muted">${html(r.catalog_version)}</span></td><td><span class="chip">${html(r.facility_id)}</span></td><td>${r.station_code?`<span class="chip">${html(r.station_code)}</span>`:'<span class="muted">not available</span>'}<br><span class="muted">${html(r.station_code_confidence)}</span></td><td>${html(r.facility_type)}</td><td>${html(r.classification)}</td><td>${html(r.city)}</td><td>${html(r.state)}</td><td>${html(r.zip)}</td><td>${html(r.visn)}</td><td>${html(r.phone)}</td><td>${linkWebsite(r.website)}</td><td>${mapLink(r)}</td><td>${html(r.source_system)}</td><td><span class="chip">${html(r.approval_state)}</span></td></tr>`).join('');el('totalMetric').textContent=state.records.length.toLocaleString();el('shownMetric').textContent=state.filtered.length.toLocaleString();el('statesMetric').textContent=uniqueValues('state').length.toLocaleString();el('typesMetric').textContent=uniqueValues('facility_type').length.toLocaleString();el('sourceMetric').textContent=state.enriched[0]?.catalog_version||'â€”'}
+function render(){const limit=Number(el('limitFilter').value||100);const rows=state.filtered.slice(0,limit);tbody.innerHTML=rows.map(r=>`<tr><td><strong>${html(r.name)}</strong><br><span class="muted">${html(r.catalog_version)}</span></td><td><span class="chip">${html(r.facility_id)}</span></td><td>${r.station_code?`<span class="chip">${html(r.station_code)}</span>`:'<span class="muted">not available</span>'}<br><span class="muted">${html(r.station_code_confidence)}</span></td><td>${html(r.facility_type)}</td><td>${html(r.classification)}</td><td>${html(r.city)}</td><td>${html(r.state)}</td><td>${html(r.zip)}</td><td>${html(r.visn)}</td><td>${html(r.phone)}</td><td>${linkWebsite(r.website)}</td><td>${mapLink(r)}</td><td>${html(r.source_system)}</td><td><span class="chip">${html(r.approval_state)}</span></td></tr>`).join('');el('totalMetric').textContent=state.records.length.toLocaleString();el('shownMetric').textContent=state.filtered.length.toLocaleString();el('statesMetric').textContent=uniqueValues('state').length.toLocaleString();el('typesMetric').textContent=uniqueValues('facility_type').length.toLocaleString();el('sourceMetric').textContent=state.enriched[0]?.catalog_version||'Ã¢â‚¬â€'}
 function clearFilters(){['searchBox','stateFilter','typeFilter','visnFilter','confidenceFilter'].forEach(id=>el(id).value='');applyFilters()}
 function toCsv(rows){const cols=['name','facility_id','station_code','facility_type','classification','city','state','zip','visn','phone','website','lat','long','source_system','approval_state','station_code_confidence','catalog_version'];const esc=v=>`"${asText(v).replace(/"/g,'""')}"`;return[cols.join(','),...rows.map(r=>cols.map(c=>esc(r[c])).join(','))].join('\n')}
 function download(name,mime,content){const blob=new Blob([content],{type:mime});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url)}
@@ -186,5 +187,6 @@ document.querySelectorAll('th[data-sort]').forEach(th=>th.addEventListener('clic
 
 <p><a href="./addresses.html">Physical address view</a></p>
   <script src="catalog-ui-public-fixes.js"></script>
+  <script src="catalog-ui-freeze-full-top.js"></script>
 </body>
 </html>

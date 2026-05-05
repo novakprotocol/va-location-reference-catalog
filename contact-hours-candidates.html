@@ -225,6 +225,7 @@
     }
   </style>
   <link rel="stylesheet" href="catalog-ui-public-fixes.css">
+  <link rel="stylesheet" href="catalog-ui-freeze-full-top.css">
 </head>
 <body>
 <!-- PUBLIC_CRISIS_LINE_BANNER_LOCKED_V1_START -->
@@ -631,7 +632,7 @@
       } else if (/open\s+daily|daily\s+from|open\s+every\s+day|seven\s+days|7\s+days/i.test(raw)) {
         markAll('open');
         label = /sunrise|sunset|dawn|dusk/i.test(raw) ? 'Daily daylight' : 'Daily';
-      } else if (/monday\s+(through|thru|to)\s+friday|mon(day)?\s*[-â€“]\s*fri(day)?|weekdays?/i.test(raw)) {
+      } else if (/monday\s+(through|thru|to)\s+friday|mon(day)?\s*[-Ã¢â‚¬â€œ]\s*fri(day)?|weekdays?/i.test(raw)) {
         markWeekdays();
         label = 'Mon-Fri';
       } else {
@@ -827,5 +828,6 @@
     });
   </script>
   <script src="catalog-ui-public-fixes.js"></script>
+  <script src="catalog-ui-freeze-full-top.js"></script>
 </body>
 </html>
