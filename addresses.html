@@ -25,22 +25,95 @@
   </style>
 </head>
 <body>
-<div id="public-crisis-line-banner" data-public-only="true" role="region" aria-label="Veterans Crisis Line public notice" style="box-sizing:border-box;margin:0 0 16px 0;padding:12px 16px;border:1px solid #b42318;border-left:6px solid #b42318;background:#fff4f2;color:#1f1f1f;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.45;">
+<!-- PUBLIC_CRISIS_LINE_BANNER_LOCKED_V1_START -->
+<style id="public-crisis-line-banner-lock-style">
+  :root {
+    --public-crisis-line-banner-height: 84px;
+  }
+  #public-crisis-line-banner {
+    box-sizing: border-box !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 2147483000 !important;
+    margin: 0 !important;
+    padding: 10px 16px !important;
+    border: 0 !important;
+    border-bottom: 2px solid #b42318 !important;
+    background: #fff4f2 !important;
+    color: #1f1f1f !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.35 !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,.22) !important;
+  }
+  #public-crisis-line-banner a {
+    font-weight: 700 !important;
+    color: #003e73 !important;
+  }
+  #public-crisis-line-banner .public-crisis-line-note {
+    display: block !important;
+    margin-top: 3px !important;
+    font-size: 12px !important;
+    color: #5c5c5c !important;
+  }
+  body {
+    padding-top: var(--public-crisis-line-banner-height, 84px) !important;
+    scroll-padding-top: calc(var(--public-crisis-line-banner-height, 84px) + 12px) !important;
+  }
+  header {
+    top: var(--public-crisis-line-banner-height, 84px) !important;
+  }
+  .controls {
+    top: var(--public-crisis-line-banner-height, 84px) !important;
+  }
+  th {
+    top: calc(var(--public-crisis-line-banner-height, 84px) + 72px) !important;
+  }
+  @media (max-width: 720px) {
+    #public-crisis-line-banner {
+      padding: 8px 10px !important;
+      font-size: 13px !important;
+      line-height: 1.3 !important;
+    }
+    #public-crisis-line-banner .public-crisis-line-note {
+      font-size: 11px !important;
+    }
+  }
+</style>
+<div id="public-crisis-line-banner" data-public-only="true" role="region" aria-label="Veterans Crisis Line public notice">
   <strong>Veterans Crisis Line:</strong>
-  Call <a href="tel:988" style="font-weight:700;color:#003e73;">988</a> then press <strong>1</strong>
+  Call <a href="tel:988">988</a> then press <strong>1</strong>
   <span aria-hidden="true"> | </span>
-  Text <a href="sms:838255" style="font-weight:700;color:#003e73;">838255</a>
+  Text <a href="sms:838255">838255</a>
   <span aria-hidden="true"> | </span>
-  Chat <a href="https://www.veteranscrisisline.net/" target="_blank" rel="noopener" style="font-weight:700;color:#003e73;">VeteransCrisisLine.net</a>
+  Chat <a href="https://www.veteranscrisisline.net/" target="_blank" rel="noopener">VeteransCrisisLine.net</a>
   <span aria-hidden="true"> | </span>
-  TTY <a href="tel:18007994889" style="font-weight:700;color:#003e73;">1-800-799-4889</a>
-  <span style="display:block;margin-top:4px;font-size:12px;color:#5c5c5c;">Public-site safety notice. Remove this banner for internal-only deployments where the public emergency-resource banner is not required.</span>
+  TTY <a href="tel:18007994889">1-800-799-4889</a>
+  <span class="public-crisis-line-note">Public-site safety notice. Remove this banner for internal-only deployments where the public emergency-resource banner is not required.</span>
 </div>
+<script id="public-crisis-line-banner-lock-script">
+  (function () {
+    function updatePublicCrisisLineBannerOffset() {
+      var banner = document.getElementById('public-crisis-line-banner');
+      if (!banner) return;
+      var height = Math.ceil(banner.getBoundingClientRect().height);
+      document.documentElement.style.setProperty('--public-crisis-line-banner-height', height + 'px');
+    }
+    window.addEventListener('load', updatePublicCrisisLineBannerOffset);
+    window.addEventListener('resize', updatePublicCrisisLineBannerOffset);
+    if (document.readyState !== 'loading') updatePublicCrisisLineBannerOffset();
+    else document.addEventListener('DOMContentLoaded', updatePublicCrisisLineBannerOffset);
+  })();
+</script>
+<!-- PUBLIC_CRISIS_LINE_BANNER_LOCKED_V1_END -->
 
 <header>
   <h1>Public VA Facility Location Catalog - Addresses</h1>
   <p>Public-source facility locations, coordinates, and physical-address enrichment. This is not an official VA production system.</p>
-  <p><a href="./index.html">Main catalog</a> Â· <a href="./aliases-hours.html">Aliases and hours</a></p>
+  <p><a href="./index.html">Main catalog</a> Ã‚Â· <a href="./aliases-hours.html">Aliases and hours</a></p>
 </header>
 <main>
   <div class="bar">
@@ -99,7 +172,7 @@ function render() {
   }).slice(0, 500);
 
   const addressCount = records.filter(r => r.physical_address && r.physical_address.formatted).length;
-  stats.textContent = `${filtered.length} shown / ${records.length} total Â· ${addressCount} with physical address`;
+  stats.textContent = `${filtered.length} shown / ${records.length} total Ã‚Â· ${addressCount} with physical address`;
 
   rows.innerHTML = filtered.map(r => {
     const a = r.physical_address || {};
@@ -112,7 +185,7 @@ function render() {
     return `<tr>
       <td><strong>${esc(name)}</strong><br><span class="muted">${esc(fid)}</span></td>
       <td class="nowrap">${esc(field(r, ["station_code", "station"]))}<br><span class="muted">${esc(field(r, ["source_system", "source"]))}</span></td>
-      <td class="addr">${esc(a.formatted || "")}<br><span class="muted">${esc([a.line1, a.line2, a.city, a.state, a.postal_code].filter(Boolean).join(" Â· "))}</span></td>
+      <td class="addr">${esc(a.formatted || "")}<br><span class="muted">${esc([a.line1, a.line2, a.city, a.state, a.postal_code].filter(Boolean).join(" Ã‚Â· "))}</span></td>
       <td class="nowrap">${esc(lat)}, ${esc(lon)}</td>
       <td class="nowrap">${esc(phone)}</td>
       <td>${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">public page</a>` : ""}<br><span class="muted">${esc(a.source || "")}</span></td>

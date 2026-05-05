@@ -1,9 +1,9 @@
 {
   "catalog_name": "VA IaT Location Reference Catalog",
   "catalog_version": "2026.05.05.1",
-  "created_utc": "2026-05-05T20:14:08.805388+00:00",
-  "git_branch": "work/public-crisis-line-banner-review-page-v1-from-9032f6e-20260505T201148Z",
-  "git_commit": "705aaa0bda36f9b5a7ed12c087a52eef55b96b9b",
+  "created_utc": "2026-05-05T20:26:21.371330+00:00",
+  "git_branch": "work/fixed-vcl-banner-hours-day-boxes-v1-from-e1342fa-20260505T202620Z",
+  "git_commit": "e1342faea942ed3e9c7a7146fee28c49a0d48c75",
   "record_count": 2137,
   "release_channel": "candidate",
   "schema_version": "1.0.0",
