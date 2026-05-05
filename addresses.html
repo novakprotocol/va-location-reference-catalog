@@ -115,7 +115,7 @@
 <header>
   <h1>Public VA Facility Location Catalog - Addresses</h1>
   <p>Public-source facility locations, coordinates, and physical-address enrichment. This is not an official VA production system.</p>
-  <p><a href="./index.html">Main catalog</a> Ãƒâ€šÃ‚Â· <a href="./aliases-hours.html">Aliases and hours</a></p>
+  <p><a href="./index.html">Main catalog</a> ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· <a href="./aliases-hours.html">Aliases and hours</a></p>
 </header>
 <main>
   <div class="bar">
@@ -174,7 +174,7 @@ function render() {
   }).slice(0, 500);
 
   const addressCount = records.filter(r => r.physical_address && r.physical_address.formatted).length;
-  stats.textContent = `${filtered.length} shown / ${records.length} total Ãƒâ€šÃ‚Â· ${addressCount} with physical address`;
+  stats.textContent = `${filtered.length} shown / ${records.length} total ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· ${addressCount} with physical address`;
 
   rows.innerHTML = filtered.map(r => {
     const a = r.physical_address || {};
@@ -187,7 +187,7 @@ function render() {
     return `<tr>
       <td><strong>${esc(name)}</strong><br><span class="muted">${esc(fid)}</span></td>
       <td class="nowrap">${esc(field(r, ["station_code", "station"]))}<br><span class="muted">${esc(field(r, ["source_system", "source"]))}</span></td>
-      <td class="addr">${esc(a.formatted || "")}<br><span class="muted">${esc([a.line1, a.line2, a.city, a.state, a.postal_code].filter(Boolean).join(" Ãƒâ€šÃ‚Â· "))}</span></td>
+      <td class="addr">${esc(a.formatted || "")}<br><span class="muted">${esc([a.line1, a.line2, a.city, a.state, a.postal_code].filter(Boolean).join(" ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· "))}</span></td>
       <td class="nowrap">${esc(lat)}, ${esc(lon)}</td>
       <td class="nowrap">${esc(phone)}</td>
       <td>${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">public page</a>` : ""}<br><span class="muted">${esc(a.source || "")}</span></td>
