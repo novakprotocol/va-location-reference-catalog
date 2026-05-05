@@ -1,9 +1,9 @@
 {
   "catalog_name": "VA IaT Location Reference Catalog",
   "catalog_version": "2026.05.05.1",
-  "created_utc": "2026-05-05T19:59:46.167857+00:00",
-  "git_branch": "work/public-contact-hours-candidates-v1-from-7a07cca-20260505T195923Z",
-  "git_commit": "7a07cca980177baf125d0b4aa6dfa8359d0a2bc9",
+  "created_utc": "2026-05-05T20:14:08.805388+00:00",
+  "git_branch": "work/public-crisis-line-banner-review-page-v1-from-9032f6e-20260505T201148Z",
+  "git_commit": "705aaa0bda36f9b5a7ed12c087a52eef55b96b9b",
   "record_count": 2137,
   "release_channel": "candidate",
   "schema_version": "1.0.0",
