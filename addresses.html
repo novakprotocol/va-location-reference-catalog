@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Public VA Facility Location Catalog - Addresses</title>
+  <style>
+    :root { color-scheme: dark; }
+    body { margin: 0; font-family: Segoe UI, Arial, sans-serif; background: #07111f; color: #eef5ff; }
+    header { padding: 28px 32px; border-bottom: 1px solid #1d3557; background: #0b1728; }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    p { color: #b8c7da; }
+    main { padding: 24px 32px; }
+    .bar { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-bottom: 18px; }
+    input { min-width: 340px; max-width: 720px; flex: 1; padding: 12px 14px; border-radius: 10px; border: 1px solid #2a4468; background: #0e1c30; color: #eef5ff; }
+    a { color: #7cc7ff; }
+    .stats { color: #b8c7da; font-size: 14px; }
+    table { width: 100%; border-collapse: collapse; background: #0b1728; border: 1px solid #1d3557; }
+    th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid #162944; }
+    th { position: sticky; top: 0; background: #10213a; z-index: 1; }
+    tr:hover { background: #10213a; }
+    .muted { color: #94a9c2; }
+    .addr { max-width: 420px; }
+    .nowrap { white-space: nowrap; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Public VA Facility Location Catalog - Addresses</h1>
+  <p>Public-source facility locations, coordinates, and physical-address enrichment. This is not an official VA production system.</p>
+  <p><a href="./index.html">Main catalog</a> Â· <a href="./aliases-hours.html">Aliases and hours</a></p>
+</header>
+<main>
+  <div class="bar">
+    <input id="q" placeholder="Search name, city, state, station code, facility id, or address..." />
+    <span class="stats" id="stats">Loading...</span>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Facility</th>
+        <th>Station</th>
+        <th>Physical address</th>
+        <th>Coordinates</th>
+        <th>Phone</th>
+        <th>Source</th>
+      </tr>
+    </thead>
+    <tbody id="rows"></tbody>
+  </table>
+</main>
+<script>
+const DATA_URL = "./data/enriched/va_locations.with_physical_addresses.json";
+const q = document.getElementById("q");
+const rows = document.getElementById("rows");
+const stats = document.getElementById("stats");
+let records = [];
+
+function field(r, names) {
+  for (const n of names) {
+    if (r[n] !== undefined && r[n] !== null && String(r[n]).trim() !== "") return String(r[n]);
+  }
+  return "";
+}
+
+function esc(s) {
+  return String(s || "").replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function render() {
+  const term = q.value.trim().toLowerCase();
+  const filtered = records.filter(r => {
+    if (!term) return true;
+    const a = r.physical_address || {};
+    return [
+      field(r, ["facility_id"]),
+      field(r, ["name", "title"]),
+      field(r, ["station_code", "station"]),
+      field(r, ["source_system", "source"]),
+      field(r, ["facility_type", "type"]),
+      a.formatted,
+      a.city,
+      a.state,
+      a.postal_code,
+      field(r, ["public_phone", "phone", "telephone"])
+    ].join(" ").toLowerCase().includes(term);
+  }).slice(0, 500);
+
+  const addressCount = records.filter(r => r.physical_address && r.physical_address.formatted).length;
+  stats.textContent = `${filtered.length} shown / ${records.length} total Â· ${addressCount} with physical address`;
+
+  rows.innerHTML = filtered.map(r => {
+    const a = r.physical_address || {};
+    const lat = field(r, ["latitude", "lat"]);
+    const lon = field(r, ["longitude", "lon", "lng"]);
+    const url = field(r, ["website_url", "url", "source_url", "link"]);
+    const name = field(r, ["name", "title"]);
+    const fid = field(r, ["facility_id"]);
+    const phone = field(r, ["public_phone", "phone", "telephone"]);
+    return `<tr>
+      <td><strong>${esc(name)}</strong><br><span class="muted">${esc(fid)}</span></td>
+      <td class="nowrap">${esc(field(r, ["station_code", "station"]))}<br><span class="muted">${esc(field(r, ["source_system", "source"]))}</span></td>
+      <td class="addr">${esc(a.formatted || "")}<br><span class="muted">${esc([a.line1, a.line2, a.city, a.state, a.postal_code].filter(Boolean).join(" Â· "))}</span></td>
+      <td class="nowrap">${esc(lat)}, ${esc(lon)}</td>
+      <td class="nowrap">${esc(phone)}</td>
+      <td>${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">public page</a>` : ""}<br><span class="muted">${esc(a.source || "")}</span></td>
+    </tr>`;
+  }).join("");
+}
+
+fetch(DATA_URL)
+  .then(r => {
+    if (!r.ok) throw new Error(`HTTP ${r.status} loading ${DATA_URL}`);
+    return r.json();
+  })
+  .then(data => {
+    records = Array.isArray(data) ? data : (data.records || []);
+    render();
+  })
+  .catch(err => {
+    stats.textContent = "Failed to load address data: " + err.message;
+  });
+
+q.addEventListener("input", render);
+</script>
+</body>
+</html>

@@ -24,7 +24,7 @@ asset_record
   has location_ref
 
 location_ref
-  points to VA IaT Location Reference Catalog record
+  points to Public VA Facility Location Catalog record
 
 catalog record
   points to source evidence and release manifest

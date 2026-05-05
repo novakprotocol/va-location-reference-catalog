@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>VA IaT Location Reference Catalog</title>
+  <title>Public VA Facility Location Catalog</title>
   <style>
     :root{color-scheme:dark;--bg:#08111f;--panel:#101b2d;--panel2:#14233a;--text:#eef6ff;--muted:#9fb4cf;--line:#263854;--accent:#6ee7ff;--good:#7cf5a4;--warn:#ffd166;--chip:#1b3355;--shadow:rgba(0,0,0,.35)}
     *{box-sizing:border-box} body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at top left,rgba(110,231,255,.16),transparent 38rem),radial-gradient(circle at top right,rgba(124,245,164,.10),transparent 34rem),var(--bg);color:var(--text)}
@@ -19,7 +19,7 @@
 </head>
 <body>
 <header>
-  <h1>VA IaT Location Reference Catalog</h1>
+  <h1>Public VA Facility Location Catalog</h1>
   <p class="subtitle">Static, no-key, public-source searchable catalog. Search by facility name, state, ZIP/postal code, facility ID, station/site code, VISN, type, classification, website, phone, coordinates, source fields, or any visible record value.</p>
 </header>
 <main>
@@ -48,7 +48,7 @@
   </section>
   <details><summary>How to run this locally or turn it on</summary><pre>Local test from repo root:
 
-cd %USERPROFILE%\Desktop\VA-IaT-LocationCatalog-Pilot\va-location-reference-catalog
+cd %USERPROFILE%\Desktop\Public VA Facility Catalog-LocationCatalog-Pilot\va-location-reference-catalog
 python -m http.server 8080
 
 Open:
@@ -94,8 +94,10 @@ function render(){const limit=Number(el('limitFilter').value||100);const rows=st
 function clearFilters(){['searchBox','stateFilter','typeFilter','visnFilter','confidenceFilter'].forEach(id=>el(id).value='');applyFilters()}
 function toCsv(rows){const cols=['name','facility_id','station_code','facility_type','classification','city','state','zip','visn','phone','website','lat','long','source_system','approval_state','station_code_confidence','catalog_version'];const esc=v=>`"${asText(v).replace(/"/g,'""')}"`;return[cols.join(','),...rows.map(r=>cols.map(c=>esc(r[c])).join(','))].join('\n')}
 function download(name,mime,content){const blob=new Blob([content],{type:mime});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url)}
-function copySummary(){const summary=['VA IaT Location Reference Catalog',`Data source: ${state.dataSource}`,`Total records: ${state.records.length}`,`Current matches: ${state.filtered.length}`,`Search: ${el('searchBox').value||'(none)'}`,`State filter: ${el('stateFilter').value||'(all)'}`,`Type filter: ${el('typeFilter').value||'(all)'}`,`VISN filter: ${el('visnFilter').value||'(all)'}`,`Station confidence filter: ${el('confidenceFilter').value||'(all)'}`].join('\n');navigator.clipboard?.writeText(summary);el('loadStatus').textContent='Summary copied to clipboard.'}
+function copySummary(){const summary=['Public VA Facility Location Catalog',`Data source: ${state.dataSource}`,`Total records: ${state.records.length}`,`Current matches: ${state.filtered.length}`,`Search: ${el('searchBox').value||'(none)'}`,`State filter: ${el('stateFilter').value||'(all)'}`,`Type filter: ${el('typeFilter').value||'(all)'}`,`VISN filter: ${el('visnFilter').value||'(all)'}`,`Station confidence filter: ${el('confidenceFilter').value||'(all)'}`].join('\n');navigator.clipboard?.writeText(summary);el('loadStatus').textContent='Summary copied to clipboard.'}
 document.querySelectorAll('th[data-sort]').forEach(th=>th.addEventListener('click',()=>{const key=th.dataset.sort;if(state.sortKey===key)state.sortDir=state.sortDir==='asc'?'desc':'asc';else{state.sortKey=key;state.sortDir='asc'}applyFilters()}));['searchBox','stateFilter','typeFilter','visnFilter','confidenceFilter','limitFilter'].forEach(id=>{el(id).addEventListener('input',applyFilters);el(id).addEventListener('change',applyFilters)});el('clearBtn').addEventListener('click',clearFilters);el('exportCsvBtn').addEventListener('click',()=>download('va-location-catalog-filtered.csv','text/csv;charset=utf-8',toCsv(state.filtered)));el('exportJsonBtn').addEventListener('click',()=>download('va-location-catalog-filtered.json','application/json;charset=utf-8',JSON.stringify(state.filtered.map(r=>r.raw),null,2)));el('copySummaryBtn').addEventListener('click',copySummary);el('fileInput').addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;acceptCatalog(JSON.parse(await f.text()),f.name)});loadCatalog();
 </script>
+
+<p><a href="./addresses.html">Physical address view</a></p>
 </body>
 </html>
