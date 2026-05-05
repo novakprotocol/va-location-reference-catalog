@@ -16,6 +16,7 @@
     .status-grid{display:grid;grid-template-columns:repeat(5,minmax(120px,1fr));gap:12px;margin:16px 0}@media(max-width:900px){.status-grid{grid-template-columns:1fr 1fr}}.card{background:linear-gradient(180deg,rgba(20,35,58,.94),rgba(12,23,39,.94));border:1px solid var(--line);border-radius:16px;padding:14px;box-shadow:0 16px 42px var(--shadow)}.metric{font-size:26px;font-weight:800;letter-spacing:-.03em}.metric-label{color:var(--muted);font-size:13px;margin-top:4px}
     .table-wrap{border:1px solid var(--line);border-radius:16px;overflow:auto;background:rgba(10,20,34,.78);box-shadow:0 16px 42px var(--shadow)}table{width:100%;min-width:1300px;border-collapse:collapse;font-size:14px}th,td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}th{position:sticky;top:0;background:#0f1c2f;color:#cfe3ff;z-index:3;user-select:none;cursor:pointer;white-space:nowrap}tr:hover td{background:rgba(110,231,255,.055)}.muted{color:var(--muted)}.chip{display:inline-flex;align-items:center;border:1px solid #335273;background:var(--chip);border-radius:999px;padding:3px 8px;font-size:12px;color:#cae4ff;margin:1px 3px 1px 0;white-space:nowrap}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}details{margin-top:16px;background:rgba(16,27,45,.72);border:1px solid var(--line);border-radius:14px;padding:12px 14px}summary{cursor:pointer;font-weight:800}pre{white-space:pre-wrap;background:#07101c;border:1px solid var(--line);border-radius:12px;padding:12px;overflow:auto}
   </style>
+  <link rel="stylesheet" href="catalog-ui-public-fixes.css">
 </head>
 <body>
 <!-- PUBLIC_CRISIS_LINE_BANNER_LOCKED_V1_START -->
@@ -184,5 +185,6 @@ document.querySelectorAll('th[data-sort]').forEach(th=>th.addEventListener('clic
 </script>
 
 <p><a href="./addresses.html">Physical address view</a></p>
+  <script src="catalog-ui-public-fixes.js"></script>
 </body>
 </html>
