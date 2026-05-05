@@ -1,0 +1,12 @@
+{
+  "denied_marker_finding_count": 3,
+  "duplicate_count": 0,
+  "error_count": 1,
+  "errors": [
+    "possible denied data marker in generated data/evidence files: ['data\\\\normalized\\\\va_locations.csv', 'data\\\\normalized\\\\va_locations.json', 'data\\\\normalized\\\\va_locations.jsonl']"
+  ],
+  "record_count": 2137,
+  "result": "FAIL",
+  "secret_finding_count": 0,
+  "validated_utc": "2026-05-05T16:33:43.108964+00:00"
+}

@@ -1,0 +1,12 @@
+{
+  "catalog_name": "VA IaT Location Reference Catalog",
+  "catalog_version": "2026.05.05.1",
+  "created_utc": "2026-05-05T16:33:43.239485+00:00",
+  "git_branch": "main",
+  "git_commit": "e46bf1caec6887bde4a6e310dbf3c4a9d8419207",
+  "record_count": 2137,
+  "release_channel": "candidate",
+  "schema_version": "1.0.0",
+  "validation_receipt": "evidence/latest_validation.json",
+  "write_back_allowed": false
+}

@@ -1,0 +1,25 @@
+{
+  "catalog_version": "2026.05.05.1",
+  "created_utc": "2026-05-05T16:33:42+00:00",
+  "outputs": [
+    "data/normalized/va_locations.json",
+    "data/normalized/va_locations.csv",
+    "data/normalized/va_locations.jsonl",
+    "data/normalized/index_by_facility_id.json",
+    "data/normalized/index_by_station_code.json",
+    "data/normalized/unmatched_station_codes.json"
+  ],
+  "record_count": 2137,
+  "result": "PASS",
+  "source_receipts": [
+    {
+      "bytes": 1970542,
+      "downloaded_utc": "2026-05-05T16:33:42+00:00",
+      "local_path": "data\\raw\\public_sources\\20260505T163337Z\\discoverva_va_locator_facility_list.html",
+      "sha256": "ee4ca5778e1c9084e9fc4afd975d9d6e9417ab55bfe91937b4dfcc56906f321c",
+      "source_id": "discoverva_va_locator_facility_list",
+      "source_url": "https://discover.va.gov/va-locator-facility-list/"
+    }
+  ],
+  "source_snapshot_utc": "2026-05-05T16:33:37+00:00"
+}
