@@ -1,0 +1,8 @@
+# Pilot owner review gate
+* @novakprotocol
+
+# Data contracts and schemas must be owner-reviewed
+/contracts/ @novakprotocol
+/schemas/ @novakprotocol
+/policies/ @novakprotocol
+/data/approved/ @novakprotocol
