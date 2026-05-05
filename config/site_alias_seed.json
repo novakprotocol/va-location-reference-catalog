@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "Seed file for human-reviewed local mnemonic site aliases. These are not the same as official VA station codes unless independently verified.",
+  "governance_note": "Treat aliases as display/search helpers until reviewed and approved. Keep source_reference and confidence explicit.",
+  "aliases": [
+    {
+      "alias": "TAM",
+      "meaning": "Tampa",
+      "match": {
+        "station_code": "673",
+        "name_contains": "tampa"
+      },
+      "alias_type": "local_mnemonic",
+      "confidence": "user_supplied_needs_public_verification",
+      "source_reference": "user_observed",
+      "review_state": "review_pending"
+    },
+    {
+      "alias": "BAY",
+      "meaning": "Bay Pines",
+      "match": {
+        "station_code": "516",
+        "name_contains": "bay pines"
+      },
+      "alias_type": "local_mnemonic",
+      "confidence": "user_supplied_needs_public_verification",
+      "source_reference": "user_observed",
+      "review_state": "review_pending"
+    }
+  ]
+}
