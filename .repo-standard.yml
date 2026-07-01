@@ -1,0 +1,29 @@
+standard:
+  source: novakprotocol/WhyPy RepoOps standards
+  version: 0.1.0
+  profile: data-spine
+  update_mode: pr-only
+
+repo:
+  name: va-location-reference-catalog
+  type: public-source-reference-data-product
+  visibility_observed: public
+  data_boundary: public-source-only
+  production_writeback: denied
+
+checks:
+  validate_catalog: python scripts/validate_catalog.py
+  build_release_candidate: python scripts/build_release_candidate.py
+  diff_check: git diff --check
+
+hosted_ci:
+  status: configured-unverified-this-pass
+  workflow: .github/workflows/validate.yml
+  must_not_claim_passed_unless_ran: true
+
+exceptions:
+  - id: visibility-wording-review-needed
+    reason: Some existing docs still describe a private pilot, while GitHub metadata was observed as public on 2026-07-01.
+    rule: Treat all repo content as public-safe and public-source-only unless the owner changes repository visibility and updates the docs.
+  - id: data-import-not-run-in-alignment-pass
+    reason: Alignment docs do not run network imports or refresh catalog data.
